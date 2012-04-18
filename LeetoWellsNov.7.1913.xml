@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../Desktop/correspondence%20schema%20andTEIwork/correspondenceProposal.rng.xml" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:math="http://www.w3.org/1998/Math/MathML"
+  xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Correspondence of Vernon Lee to H.G. Wells</title>
+        <author>Lee, Vernon</author>
+        <editor>Gagel, Mandy</editor>
+      </titleStmt>
+      <editionStmt>
+        <edition>First edition, digital</edition>
+        <respStmt>
+          <resp>Transribed by</resp>
+          <name>Mandy Gagel</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoded by</resp>
+          <name>Mandy Gagel</name>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Loyola University</publisher>
+        <pubPlace>Chicago, Il</pubPlace>
+        <date>2012</date>
+      </publicationStmt>
+      <seriesStmt>
+        <p>Digital born transcriptions of letters from Vernon Lee to H.G. Wells</p>
+      </seriesStmt>
+      <notesStmt>
+        <note type="summary">Concerns Lee's opinions about Wells' books Passionate Friends and Marriage. Discusses their different views on sex relations. Lee makes reference to her last visit with him at Pont de l'Arche and that they disagreed often while she was there.</note>
+      </notesStmt>
+      <sourceDesc>
+        <correspDesc>
+          <sender>
+            <persName>Vernon Lee</persName>
+          </sender>
+          <addressee>
+            <persName>H.G. Wells</persName>
+          </addressee>
+          <placeSender>
+            <placeName>Il Palmerino, San Gervasio, Florence</placeName>
+          </placeSender>
+          <placeAddressee>
+            <placeName>Wells home</placeName>
+          </placeAddressee>
+          <dateSender>
+            <date when="1913-11-07">November 7, 1913</date>
+          </dateSender>
+        </correspDesc>
+        <msDesc>
+          <msIdentifier>
+            <repository>Wells Archive at UI, Urban Champaign</repository>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Pilot project for a digital edition of the selected letters of Vernon Lee</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Various explanations here about editing choices we made.</p>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <textClass>
+        <keywords scheme="Lee Letters">
+          <list>
+            <item>letter
+              <date when="1913-11-07"/>
+            </item>
+          </list>
+        </keywords>
+      </textClass>
+      <langUsage>
+        <language ident="eng">English</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change>Yet to certify certain unreadable words</change>
+    </revisionDesc>
+  </teiHeader>
+  <text type="letter">
+    <body>
+      <div type="address">
+        <!-- address is typed letterhead -->
+        <address rend="right">
+          <addrLine>Il Palmerino</addrLine>
+          <addrLine>San Gervasio</addrLine>
+          <addrLine>Florence</addrLine>
+        </address>
+      </div>
+      <div type="writingSession">
+        <dateline rend="left">Nov. 7. 1913</dateline></div>
+      <div type="writingSession">
+        <p><hi rend="left">Answ</hi></p></div>
+      <div type="writingSession">
+        <salute>Dear <rs type="person">Mr Wells,</rs></salute>
+        <p>I found the <rs type="book"><hi rend="underline">Passionate Friends</hi></rs> here, on my return late in October. I am glad you have given it me. You must have known I should have liked it - By the way I liked <rs type="book"><hi rend="underline">Marriage</hi></rs> quite immensely. This book is extraordinary, interesting + charming to me in all the parts about <rs type="location">S. Africa</rs> + <rs type="location">India</rs> (you wonderful man, I don’t believe you’ve been near those countries) and also in the general attitude. I like your novels being super-personal, a return to the <rs type="book"><hi rend="underline">Utopia</hi></rs> style of thing. Also, may I say so? I am delighted + in a way <hi rend="underline">relieved</hi> to find that you see civilization as dependent on peace + internationalism. Do you know, I believe I have the dreadful faculty of making you take part against your own ideas when we talk together - That last time I stayed with you (at <rs type="location">P. de l’Arche</rs>) you were so outspokenly indifferent to the peace being kept (even rather anti-German and “squash-them-while-we can”) that I began to think I must have made myself up an imaginary <rs type="person">Wells</rs> to please my heart’s desire (one does such things in one’s love of writers quite as much as of other folk) and that the real <rs type="person">Wells</rs> - how shall I say it -? Was rather an opponent than an ally. <hi rend="underline">You</hi>, on the other hand, doubtless thought I had a double dose of disagreeableness on that occasion, and both, I think, felt we weren’t much profit or pleasure to one another.</p>
+        <p><hi rend="underline">Of course</hi> the sex problem is one of the chief difficulties. Its men are <hi rend="underline">not</hi> the obstacles to progress. But I think you have shown it better in <rs type="book"><hi rend="underline">Marriage</hi></rs>. It is that beastly over personality: <hi rend="underline">my</hi> husband, <hi rend="underline">my</hi> children, <hi rend="underline">my</hi> curtains and <hi rend="underline">après moi</hi>, or rather <hi rend="underline">autour de moi</hi>, <hi rend="underline">le déluge</hi>. As to Lady Mary, what was the matter with her was surely not her desire for independence (she had none) but her incapacity <hi rend="underline">to pay the price of things</hi>. She wanted her lover but she also wanted her frocks, parties, motors + position. <unclear>[?]</unclear> that woman would never have given up all that apparatus of sex distinction + sex importance which she railed against, because she hadn’t the grit to try for any other source of importance. But <hi rend="underline">you</hi> know, better than I, that it is not the drawbacks of adultery (after all Tristram + Iseult felt them, + perhaps even Helen + Paris) which are going to sweep away the congestion (excuse metaphor) of sex preoccupation. You know perfectly that it is going to be done, <hi rend="underline">is</hi> already beginning to be done, by those women whom you, like <rs type="person">Ferrero</rs>, call <hi rend="underline">neuters</hi> (rather <hi rend="underline">illogically</hi> hitting them for their <hi rend="strikethrough">absence</hi> <hi rend="above">lack</hi> of what you deprecate in the queen bees). Miss Stella whatever her name is, with her poor pinched nose, and with everything in her nature <unclear>[syne?]</unclear> by that pince-nez’s pinching - Miss Stella something or other is really <hi rend="underline">going to do it</hi>. Because she is willing to pay the price of <hi rend="strikethrough">what</hi> it; the price of being a transitional, uncomfortable, unsatisfied, often most ungrateful + ungracious creature. It is by women working + competing with men that the hareem and the Paris fashion paper atmosphere (have you seen the Paris fashion advertisement in the English Review?) will gradually be got rid of. A friend of mine, who has lived a good deal among German girls of the professional sort, tells me (the friend is a man) that a decent <hi rend="above">i.e. reasonable</hi> freedom in sex relations already exist there, with the consequence that prostitution is greatly diminished. But you know all this, and at present you are in love with the Earl’s daughter. Now no wonder: for the modern rich woman, when in the least intelligent + nice, is a marvelous + enchanting work of art. But she will have to go with Bladesover, which when it goes, will leave me, at least, half heart broken - There! I’ve sermoned enough. But do, some day, make amends to the poor “neuter,” the woman who has left home + is typing, or clerking, but always starving herself if not of food then of other human requisites, because of this blind, furious will-to-independence. Goodbye and thank you. Not so much for sending me the book, even, as for the pleasure I have had in it, the pleasure of finding again a great comrade.</p>
+        <closer>My love to your wife. If ever you come back to <rs type="location">Florence</rs> remember I am on the telephone + don’t attempt surprise-visits.
+       Yours, dear brother in Utopia, very sincerely</closer>
+        <signed><rs type="person"><hi rend="underline"><hi rend="right">V. Paget</hi></hi></rs></signed>
+        <postscript>
+          <p>I like the Princess. There is something nice + amusing in your having given yourself a Serene Highness for a cousin. It’s picturesque. One of the delights of noveling must be this imaging oneself into all sorts of situations, as I imagined myself when a small girl among <rs type="person">Cooper’s</rs> Indians + in company with the <rs type="book">Swiss Family Robinson.</rs></p></postscript>
+      </div>
+    </body>
+  </text>
+</TEI>

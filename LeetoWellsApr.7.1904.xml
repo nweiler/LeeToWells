@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../Desktop/correspondence%20schema%20andTEIwork/correspondenceProposal.rng.xml" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:math="http://www.w3.org/1998/Math/MathML"
+  xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Correspondence of Vernon Lee to H.G. Wells</title>
+        <author>Lee, Vernon</author>
+        <editor>Gagel, Mandy</editor>
+      </titleStmt>
+      <editionStmt>
+        <edition>First edition, digital</edition>
+        <respStmt>
+          <resp>Transribed by</resp>
+          <name>Mandy Gagel</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoded by</resp>
+          <name>Mandy Gagel</name>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Loyola University</publisher>
+        <pubPlace>Chicago, Il</pubPlace>
+        <date>2012</date>
+      </publicationStmt>
+      <seriesStmt>
+        <p>Digital born transcritptions of letters from Vernon Lee to H.G. Wells</p>
+      </seriesStmt>
+      <notesStmt>
+        <note type="summary">This regards library catalogs in Florence and England and Wells' book, Anticipation.</note>
+      </notesStmt>
+      <sourceDesc>
+        <correspDesc>
+          <sender>
+            <persName>Vernon Lee</persName>
+          </sender>
+          <addressee>
+            <persName>H.G. Wells</persName>
+          </addressee>
+          <placeSender>
+            <placeName>IL Palmerino, Florence</placeName>
+          </placeSender>
+          <placeAddressee>
+            <placeName>Wells home, England</placeName>
+          </placeAddressee>
+          <dateSender>
+            <date when="1904-04-07">April 7, 1904</date>
+          </dateSender>
+        </correspDesc>
+        <msDesc>
+          <msIdentifier>
+            <repository>Wells Archive at UI, Urban Champaign</repository>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Pilot project for a digital edition of the selected letters of Vernon Lee</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Various explanations here about editing choices we made.</p>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <textClass>
+        <keywords scheme="Lee Letters">
+          <list>
+            <item>letter
+              <date when="1904-04-07"/>
+            </item>
+          </list>
+        </keywords>
+      </textClass>
+      <langUsage>
+        <language ident="eng">English</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change>Yet to certify certain unreadable words</change>
+    </revisionDesc>
+  </teiHeader>
+  <text type="letter">
+    <body>
+      <div type="address">
+        <!-- Address is a letterhead, typeface -->
+        <address rend="right">
+          <addrLine>Il Palmerino</addrLine>
+          <addrLine>S. Gervasio</addrLine>
+          <addrLine>Florence.</addrLine>
+        </address>
+      </div>
+      <div type="writingSession">
+     <dateline rend="left">April 7. 1904</dateline></div>
+      <div type="writingSession">
+      <salute>Dear <rs type="person">Mr Wells</rs></salute>
+        <p>Your kind letter has given us so much pleasure; I say <hi rend="underline">us,</hi>, because I sent it on to <rs type="person">Countess Pasolini.</rs> Her answer, in very pretty + quaint English, may interest you. And by her desire I am sending you a set of her catalogues, in case you ever see a chance of putting them in the hands of people to whom they may be of use. Is it a mere illusion of distance which makes me imagine you surrounded by people interested in the same things as yourself; or does one generously think that others must have whatever one feels the lack of? For my life abroad, in the country + among foreigners – a life which is now an unbreakable habit – prevents my coming in contact with such questions as interest you save through the means of books. And yet, sadly enough, questions of sociology + psychology <hi rend="underline">are</hi> what interests me most; aesthetics (which is, so far as I have any <hi rend="strikethrough"> ) </hi>my little bit of science) being for me essentially psychological + sociological.</p>
+          <p>You can believe how very pleased I shall be to have a chance of talking over such matters with you, + how warmly I thank you + <rs type="person">Mrs Wells</rs> for your invitation. I shall let you know when I come to <rs type="location">England</rs> in July.</p>
+          <p>Have you seen, I wonder, a sort of little French <rs type="book"><hi rend="underline">Anticipation</hi></rs>, by my young semi socialist friend <rs type="person">Daniel Halévy,</rs> called <rs type="book">“Histoire de Quatre Ans”</rs> – which appeared in the <rs type="periodical"><hi rend="underline">Cahiers de la Quinzaine</hi></rs> last autumn. I feel sure it would interest you, + its author <hi rend="above">would do so</hi> also. I shall ask him to send it you + I shall send him <rs type="book"><hi rend="underline">Anticipation,</hi></rs> which I have given to several of my friends over here.</p>
+        <closer>Thanking you + hoping ere long to have the pleasure of better acquaintance, I am, dear Mr Wells,Yrs Truly
+        <signed><hi rend="underline"><rs type="person"><hi rend="right">V. Paget</hi></rs></hi> 
+          ("Vernon Lee")</signed>
+        </closer>
+      </div>
+    </body>
+  </text>
+</TEI>

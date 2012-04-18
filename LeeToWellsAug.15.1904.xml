@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model 
+    href="correspondence%20schema/correspondenceProposal.rng" 
+    type="application/xml" 
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI 
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:math="http://www.w3.org/1998/Math/MathML" 
+    xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Correspondence of Vernon Lee to H.G. Wells</title>
+                <author>Lee, Vernon</author><editor>Gagel, Mandy</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>First edition, digital</edition>
+                <respStmt>
+                    <resp>Transribed by</resp>
+                    <name>Mandy Gagel</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Encoded by</resp>
+                    <name>Nick Weiler</name>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Loyola University</publisher>
+                <pubPlace>Chicago, Il</pubPlace>
+                <date>2012</date>
+            </publicationStmt>
+            <seriesStmt>
+                <p>Digital born transcritptions of letters from Vernon Lee to H.G. Wells</p>
+            </seriesStmt>
+            <notesStmt>
+                <note type="summary">The first known letter to Wells from Lee. 
+                    It regards library catalogs and Wells book, Anticipation.</note>
+            </notesStmt>
+            <sourceDesc>
+                <correspDesc>
+                    <sender>
+                        <persName>Vernon Lee</persName>
+                    </sender>
+                    <addressee>
+                        <persName>H.G. Wells</persName>
+                    </addressee>
+                    <placeSender>
+                        <placeName>IL Palmerino, Florence</placeName>
+                    </placeSender>
+                    <placeAddressee>
+                        <placeName>Wells home, London</placeName>
+                    </placeAddressee>
+                    <dateSender>
+                        <date when="1904-08-15">August 15, 1904</date>
+                    </dateSender>
+                </correspDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>Wells Archive at UI, Urbana Champaign</repository>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Pilot project for a digital edition of the selected letters of Vernon Lee</p>
+            </projectDesc>
+            <editorialDecl>
+                <p>Various explanations here about editing choices we made.</p>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="Lee Letters">
+                    <list>
+                        <item>letter?
+                            <date when="1904-08-15"/>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change>Yet to certify certain unreadable words</change>
+        </revisionDesc>
+    </teiHeader>
+    <text type="letter">
+        <body>
+            <div type="address">
+                <!-- Address is a letterhead, typeface -->
+                <address>
+                    <addrLine>Il Palmerino</addrLine>
+                    <addrLine>S. Gervasio</addrLine>
+                    <addrLine>Florence.</addrLine>
+                </address>
+            </div>
+            <div type="writingSession">
+                <dateline rend="left">Dundee Station Aug. 15. [1904]</dateline>
+            </div>
+            <div type="writingSession">
+                <salute>Dear Mr Wells,</salute>
+                <p>On finishing the <rs type="book"><hi rend="underline">Lady from the Sea</hi></rs> I said  to myself “I must 
+                    write to Mr Wells to tell him how immensely the book improves, and 
+                    how extremely well done + interesting (in the very sense I wanted) 
+                    it seems to me” - When your letter came, I left <rs type="location">Leeds</rs> for 
+                    <rs type="location">Scotland</rs>, <hi rend="strikethrough">and then</hi> 
+                    your gift of books came --. And then, instead of writing this rider to
+                    my previous letter, I gave what little time my work and the old lady I 
+                    was staying with, left me, not to letter writing but to reading first your
+                    paper from <hi rend="underline">Mind</hi> and then your enchanting novel. 
+                    Dear <rs type="person">Mr Wells</rs>, you are a great, 
+                    great deal too modest. I have now read two thirds of <rs type="book">
+                    “Love + Mr Lewisham”</rs> and I
+                    must permit myself to say that if you include it in what you say of yourself, 
+                    you are silly. It is a very fine, earnest, mature book - mature I mean not
+                    merely in the depth of its humanity and of its philosophical sweep of view 
+                    (for one feels somehow the whole time that <rs type="person">Lewisham</rs> is but a minute scrap of 
+                    the great Will to Exist) but mature also in the execution: the slightness of
+                    what is actually given, the wealth of what one feels behind the construction,
+                    emphasis, carrying the subject + [dropping] it - Quite apart from the contents it
+                    seems to me admirable. It has that admirable quality of slightness, of 
+                    earnestness, <hi rend="strikethrough">which</hi> so rare in English novels, the very quality I alluded 
+                    to when I said that to treat subjects like the Time Machine one should have 
+                    the handling of men like Anatole France. And the earlier part of the book is 
+                    really very beautiful: the love making of these people, with its charming reticence,
+                    has got an extraordinary quality of impersonal passion; not the love of Mr so + so +
+                    Miss such a one, but just love in the abstract, the love of all young creatures, akin 
+                    the powers which make [sap rise] + buds swell; + with the pathos of the fatal [?] of
+                    the [Will]. It is this which gives it dignity, [charmingly] lifting it far above the 
+                    chronicling of any sort of individual small [?]. Thank you for the great pleasure you
+                    have given + will give me. I should like to know, from you, which of your books are most
+                    akin to this one, so as to get them for my solitary winter evening’s reading. 
+                </p>
+                <p>
+                    I should like to send you something of mine in return. Looking around at
+                    my far too voluminous works, I fear most of them would strike you as literature 
+                    for aesthetes or rich dilettantes, though as a fact that is what I hate most. But 
+                    I will find something, merely for the pleasure of being on your shelves. My serious 
+                    work nowadays us psychology; + some day you shall have a specimen. But I think I will
+                    send you some of my old morality books. Some day I hope to have my say about serious 
+                    matters; when I shall  know my own mind better, have got over the terror of conflicting 
+                    + fad, which paralyse me considerably. The <hi rend="underline">Mind</hi> paper is very interesting; + still more so 
+                    your pamphlet on <rs type="underline">[founding/forming] the future</rs>, which I have just read - 
+                </p>
+                <p>
+                    The porter is calling me, so I break off.
+                </p>
+            </div>
+            <div type="writingSession">
+                <dateline> rend="left">Aug 16.</dateline>
+                <p><rs type="location">Kellie Castle Pittenweem</rs></p>
+                <p>
+                    I only want to suggest <hi rend="underline">1st.</hi> in estimating the possibilities of any 
+                    future moral code, aren’t we apt to forget that we virtually have always
+                    had two, one for the rule + one for the exception, one preached, the 
+                    other acted on.
+                </p>
+                <p>
+                    2<hi rend="underline">d</hi> that the old theology was perfectly correct in its anthropocentric
+                    views. <hi rend="underline">We are</hi> the centre of the universe for all our own practical purposes;
+                    + we are so more than they thought, since the universe we know about is
+                    the universe <hi rend="underline">conceived</hi> by us, constructed by us with faculties produced 
+                    + limited by our human requirements. In fact are the Comtistes, [?] us 
+                    they are, not on the whole, nearer the truth than those who (like you,
+                    if I judge by the end of <hi rend="underline">Anticipation</hi>) would give us the Universal Will,
+                    or the <hi rend="underline">Will</hi> to Live, as a divinity. Man is his own divinity; he has to
+                    fight that old <hi rend="underline">Will</hi> to Live (+ Die!) with its own weapons. I see the
+                    universe rather as a kind of manichean dualism, only if it is the [?]=man
+                    who has created <hi rend="above"><hi rend="underline">good</hi></hi>, spirit out of the mere indifferent 
+                    thing, matter, force, furnished by the original creator.
+                </p>
+                <p>
+                    I shall be in the North another ten days, + after a brief time
+                    in <rs type="location">Surrey</rs> + at <rs type="location">Oxford</rs>, shall return 
+                    to <rs type="Location">Italy</rs> in September. My address till Sept. 15 will 
+                    be <rs type="Location">Grosvenor Crescent Club</rs>
+                </p>
+                <p>
+                    Please remember me very warmly to Mrs Wells.
+                </p>
+                <p>Thanks again for all the pleasure you have given me. I finished <rs type="person">Mr Lewisham</rs> 
+                    last night; it is fine, moving, manly, [?] + philosophic.
+                </p>
+                <closer>Yours truly<signed><hi rend="underline">V Paget</hi></signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

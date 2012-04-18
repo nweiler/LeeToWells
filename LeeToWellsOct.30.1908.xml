@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="file:/C:/Users/sirius/Downloads/tei-xslt1-6.0/xml/tei/stylesheet/xhtml/tei.xsl"?>
+<?xml-model href="C:\Users\sirius\Desktop\correspondence schema\correspondenceProposal.rng.xml" 
+    type="application/xml" 
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI 
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:math="http://www.w3.org/1998/Math/MathML" 
+    xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Correspondence of Vernon Lee to H.G. Wells</title>
+                <author>Lee, Vernon</author><editor>Gagel, Mandy</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>First edition, digital</edition>
+                <respStmt>
+                    <resp>Transribed by</resp>
+                    <name>Mandy Gagel</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Encoded by</resp>
+                    <name>Nick Weiler</name>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Loyola University</publisher>
+                <pubPlace>Chicago, Il</pubPlace>
+                <date>2012</date>
+            </publicationStmt>
+            <seriesStmt>
+                <p>Digital born transcritptions of letters from Vernon Lee to H.G. Wells</p>
+            </seriesStmt>
+            <notesStmt>
+                <note type="summary">The first known letter to Wells from Lee. 
+                    It regards library catalogs and Wells book, Anticipation.</note>
+            </notesStmt>
+            <sourceDesc>
+                <correspDesc>
+                    <sender>
+                        <persName>Vernon Lee</persName>
+                    </sender>
+                    <addressee>
+                        <persName>H.G. Wells</persName>
+                    </addressee>
+                    <placeSender>
+                        <placeName>IL Palmerino, Florence</placeName>
+                    </placeSender>
+                    <placeAddressee>
+                        <placeName>Wells home, London</placeName>
+                    </placeAddressee>
+                    <dateSender>
+                        <date when="1908-10-30">October 30, 1908</date>
+                    </dateSender>
+                </correspDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>Wells Archive at UI, Urbana Champaign</repository>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Pilot project for a digital edition of the selected letters of Vernon Lee</p>
+            </projectDesc>
+            <editorialDecl>
+                <p>Various explanations here about editing choices we made.</p>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="Lee Letters">
+                    <list>
+                        <item>letter?
+                            <date when="1908-10-30"/>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change>Yet to certify certain unreadable words</change>
+        </revisionDesc>
+    </teiHeader>
+    <text type="letter">
+        <body>
+            <div type="address">
+                <!-- Address is a letterhead, typeface -->
+                <address>
+                    <addrLine>Il Palmerino</addrLine>
+                    <addrLine>S. Gervasio</addrLine>
+                    <addrLine>Florence.</addrLine>
+                </address>
+            </div>
+            <div type="writingSession">
+                <dateline rend="left">Oct 30. 1908</dateline>
+            </div>
+            <div type="writingSession">
+                <salute>My dear Mr Wells,</salute>
+                <p>Forgive my remissness: My factotum servant had been ill and I found a lot of 
+                    work - housemaid’s work - to do on return home.</p>
+                <p>The <rs type="person"><hi rend="underline">Mrs</hi>Dodge</rs> who wrote to you is the wife of an amiable American ex 
+                    architect + present millionaire. Her name is <rs type="person"><hi rend="underline">Mabel</hi></rs> not Ishmael. She is described 
+                    as being good natured, generous, harum scarum + chiefly reclining in odalisque 
+                    yellow satin on more or less priceless rugs in a fine old Florentine villa which, 
+                    after the manner of persons of taste (I <hi rend="underline">loathe</hi> persons of taste, they always destroy 
+                    everything) the Dodges have reduced to perfect style and total hideousness. For the 
+                    rest a lady <hi rend="underline">à grands engouements</hi>. The small boy . . is a small boy. It is characteristic
+                    that they should want a utopian son after having devastated a whole hillside to plant a
+                    genuine 17th century garden: <hi rend="underline">you</hi> are the authority on utopia and its children, as 
+                    <rs type="person">Berenson</rs>
+                    is on old masters, hence the letter. I do not think you need bother much about your way of
+                    answering. I was taken to Le Mans to see <rs type="person">Wilburgh Wright</rs> fly (it was like a large grasshopper
+                    or rather locust <hi rend="strikethrough">flying</hi> whirring round + round a military exercising ground for two hours and
+                    the small height gave the idea rather of moving along a wire than of real flying) - and got these
+                    postcards for you. Now I see you have written + printed a book on flying (which I shall read) 
+                    but nevertheless I send these coals to Newcastle; they will amuse your small boys.</p>
+                <p>Thank you so very much about the English Review. <rs type="person">Hüffer</rs> preferred an already written spanish ghost 
+                    story to my unwritten (+ probably never to be written) new one. So I sent it. I want to give 
+                    this winter to a counter-blast to Pragmatism (in the will-to believe sense) + to my work on 
+                    literary processes, so I shall have no time for stories. And my stories are always best in
+                    my head.</p>
+                 <p>Look: I have read Paley’s paper and your answer; I have read the first paragraph of Paley three
+                    times; and, upon my word, I think you are as unfair to him as you accuse him of being to you.</p>
+                 <p>I can see no insinuation of bad faith in his preamble, nothing you have a right to construe into a
+                    conspiracy. The remark that he makes i.e. that socialism has now entered onto the converting, 
+                    conciliatory line, + hence tries to appeal to different kinds of readers, is a most true + harmless
+                    one. Why construe it into an accusation of conspiracy? Of course I don’t know what Mallock wrote, 
+                    nor what this Paley, whom I never heard of before, may have written against you on previous occasions; + 
+                    I can quite conceive that while ostensibly answering <hi rend="underline">this</hi> article, you may be complaining of unfair
+                    treatment in <hi rend="underline">other</hi> articles. But dear Mr Wells, you <hi rend="underline">must</hi> 
+                    remain fair. That is your great virtue, your
+                    distinction, your privilege, what makes us all love you more than almost any other writers. Do not let 
+                    yourself be goaded into <hi rend="strikethrough">their</hi> imitating <hi rend="underline">their</hi> 
+                    attorney’s unfairness or their bad temper. I can’t help 
+                    writing like this because the beginning of your article (all about the conspiracy) made me down right 
+                    unhappy. I hate your giving yourself away like that. Forgive my sincerity; I am too gratefully + admiringly
+                    attached to you to hide what I think on this occasion. I cannot bear your not always acting up to the 
+                    perfect kindliness + sincerity which <hi rend="strikethrough">you + all</hi> distinguishes 
+                    you from other writers on such subjects.</p>
+                <closer>Give my best + gratefullest love to your wife + believe in my sincere affection,
+                    Yrs truly
+                    <signed><hi rend="underline">V. Paget</hi></signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,157 @@
+<?oxygen RNGSchema="correspondenceProposal.rng.xml" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A041001">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">WeGA, Briefe, Digitale Edition</title>
+                <title level="a">Carl Maria von Weber an Caroline Brandt in Prag<lb/>Berlin, Mittwoch, 1. Januar bis Samstag, 4. Januar 1817 (Nr. 15)</title>
+                <author key="A002068">Weber, Carl Maria von</author>
+                <editor>Veit, Joachim</editor>
+                <funder>
+                    <name>Carl-Maria-von-Weber-Gesamtausgabe</name>
+                    <address>
+                        <street>Gartenstrasse 20</street>
+                        <postCode>32756</postCode>
+                        <placeName>
+                            <country>D</country>
+                            <settlement>Detmold</settlement>
+                        </placeName>
+                    </address>
+                </funder>
+            </titleStmt>
+            <editionStmt>
+                <edition>WeGA</edition>
+                <respStmt>
+                    <resp>Übertragung</resp>
+                    <name>Eveline Bartlitz</name>
+                    <name>Joachim Veit</name>
+                </respStmt>
+            </editionStmt>
+            <extent>ca. 18 KB</extent>
+            <publicationStmt>
+                <publisher>WeGA elektronisch</publisher>
+                <idno type="WeGA" n="894"/>
+                <availability status="restricted">
+                    <p>Copyright © 2009, Carl-Maria-von-Weber-Gesamtausgabe, Detmold</p>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <p>Machine-Readable Transcriptions of Texts from the Carl Maria von Weber Complete Edition (WeGA)</p>
+            </seriesStmt>
+            <notesStmt>
+                <note type="summary">Tagebuch 31. Dezember bis 3. Januar: gesellschaftl. Aktivitäten; Privates;</note>
+            </notesStmt>
+            <sourceDesc>
+                <correspDesc>
+                    <sender>
+                        <persName key="A002068">Weber, Carl Maria von</persName>
+                    </sender>
+                    <addressee>
+                        <persName key="A000213">Weber, Caroline</persName>
+                    </addressee>
+                    <placeSender>
+                        <placeName>Berlin</placeName>
+                    </placeSender>
+                    <placeAddressee>
+                        <placeName>Prag</placeName>
+                    </placeAddressee>
+                    <dateSender>
+                        <date from="1817-01-01" to="1817-01-04" n="01">1. bis 4. Januar 1817</date>
+                    </dateSender>
+                    <incipit>Prost Neujahr!! Millionen Bußen. und gute Nacht</incipit>
+                    <context>
+                        <ref target="http://www.weber-gesamtausgabe.de/A041003" n="next">Brief Webers an Caroline Brandt vom 5.–7. Januar 1817</ref>
+                    </context>
+                </correspDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country>D</country>
+                        <settlement>Berlin</settlement>
+                        <repository n="D-B">Staatsbibliothek zu Berlin Preußischer Kulturbesitz</repository>
+                        <idno>Weberiana Cl.II A a 2, 1</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>1 DBl. (4 b.S. einschl. Adr.)</p>
+                        <p>geringfügige Textverluste durch Siegeleinriss</p>
+                        <p>Aufschrift von Jähns auf 1r unten: „Carl Maria von Weber an seine Braut. Eigenhändig.“</p>
+                    </physDesc>
+                    <additional>
+                        <listBibl>
+                            <bibl n="firstPrint">Muks, S. 309-315 (Nr. 57)</bibl>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Carl-Maria-von-Weber-Gesamtausgabe, Sämtliche Briefe</p>
+            </projectDesc>
+            <editorialDecl>
+                <p>Übertragung folgt den ER der WeGA</p>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="de-DE">German</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="approved">
+            <change who="JV" when="2011-04-16">Kommentare aus der alten Datei eingearbeitet und Korrekturen vorgenommen; Textkonstitution angepasst. Überschreibungen nochmals im Detail zu prüfen</change>
+			<change when="2011-04-03" who="PS">ID und @keys gegen nicht-sprechende ersetzt.</change>
+            <change who="SK" when="2009-11-05">Brief überarbeitet</change>
+            <change who="PS" when="2009-10-22">Brieftext aus InDesign eingefügt (war wohl vergessen?) und grobe Struktur ausgezeichnet</change>
+            <change who="PS" when="2009-05-08">Initiale Transformation aus askSam DB Briefe1</change>
+            <change who="JH" when="2010-07-08">Faksimiles verlinkt.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text type="letter">
+        <body>
+            <div type="address" facs="#facs_2v">
+                <address>
+                    <addrLine>An <hi rend="latintype">Mademoiselle</hi></addrLine>
+                    <addrLine><hi rend="underline" n="1"><hi rend="latintype"><persName key="A000213">Carolina Brandt</persName></hi>.</hi></addrLine>
+                    <addrLine>Wohlgebohren</addrLine>
+                    <addrLine>MitGlied des Ständischen Theaters</addrLine>
+                    <addrLine>zu</addrLine>
+                    <addrLine><hi rend="underline" n="1"><hi rend="latintype"><placeName><settlement>Prag</settlement></placeName></hi>.</hi></addrLine>
+                    <addrLine>Wohnhaft am Juden-</addrLine> 
+                    <addrLine>TandelMarkt im Hause</addrLine> 
+                    <addrLine>des Herrn PostOffizianten</addrLine>
+                    <addrLine><hi rend="underline" n="1"><hi rend="latintype"><persName key="A002296">Schwarz</persName></hi>.</hi></addrLine>
+                </address>
+            </div>
+            <div type="writingSession" n="1">
+                <opener>
+                    <dateline><hi rend="latintype">Nro</hi>: 15<lb/>d 1<hi rend="superscript">t</hi> <hi rend="latintype">Januar</hi> 1817</dateline>
+                    <dateline rend="left"><hi rend="underline" n="1">Nachts 2 Uhr</hi>. oder vielmehr <hi rend="underline" n="1"><hi rend="underline" n="1">Früh</hi> 2 Uhr</hi>.</dateline>
+                </opener>
+                <p n="1"><hi rend="underline" n="1">Prost Neujahr</hi>!! Millionen Bußen. und <hi rend="underline" n="1">gute Nacht</hi> gute gute Nacht. mein einzig vielgeliebter <rs type="person" key="A000213">Muks</rs>.</p>
+            </div>
+            <div n="2" type="writingSession">
+                <opener><dateline rend="left"><hi rend="underline" n="1">Abends ½ 11 Uhr.</hi></dateline></opener>
+                <p>Ich wollte daß der <hi rend="underline" n="1">Teufel</hi> alle übergefälligen Freunde über <hi rend="underline" n="1">400000 Bloksberge</hi> weg mit ihren <hi rend="underline" n="1">Naseweisen</hi>, <hi rend="underline" n="1">ungewaschnen</hi>, <hi rend="underline" n="1">vorlauten einfältigen</hi> <hi rend="underline" n="2">Plappermäulern</hi> führte.<space unit="chars" quantity="5"/><hi rend="underline" n="2">Ich bin so böße</hi> ich könnte alles <hi rend="underline" n="4">frikaßiren</hi> vor <hi rend="underline" n="5">Wuth</hi>.<space unit="chars" quantity="5"/>Nu, nu! erschrikk nur nicht zu sehr, ich bin schon wieder gut, und beim Lichte besehen hat ja mein <rs type="person" key="A000213">Muks</rs> dadurch einige Tage früher Freude gehabt,<note xml:id="c_001" type="commentary" resp="JV">Weber hatte in seinem <rs key="A040957" type="letter">Brief Nr. 13 vom 26.–28. Dezember 1816</rs> Caroline als Überraschung die Dresdner Anstellung mitgeteilt, die sie offensichtlich aber bereits anderweitig – möglicherweise durch Anton Schmidls Frau – erfahren hatte; vgl. dazu auch den  <rs key="A041003" type="letter">Brief vom 5. Januar 1817</rs> an Caroline.</note> die man nie früh genug haben kann. <subst><del rend="overwritten">a</del><add place="inline">A</add></subst>ber so ist es, ich meine immer alle Freude für meine <persName key="A000213">Lina</persName> dürfte nur von <hi rend="underline" n="1">mir</hi> aus gehen.</p>
+                <p>Nun will ich aber ordentlich erzählen, sonst glaubst du ich bin toll geworden.<space unit="chars" quantity="5"/>Nachdem ich Gestern meinen <rs key="A040962" type="letter">Brief <hi rend="latintype">No</hi>. 14</rs> abgeschikt hatte, lauerte ich vergebens auf einen Brief von <rs type="person" key="A000213">Muks</rs>. Gieng um 6 Uhr auf die <placeName>Akademie</placeName>, von da zu <hi rend="underline" n="1"><rs type="persons" key="A001070 A001069">Krausens</rs></hi>, und von da um 10 Uhr zu <hi rend="latintype"><rs type="persons">Jordans</rs></hi>, wo <rs type="persons" key= "A001165 A001166"> Lichtensteins</rs> und beinah alle meine Bekannten waren. an beiden Orten muste ich spielen, wie das wohl hier geht wie du weißt. Es war recht lustig, ich saß zwischen der <persName key="A002181">Wollank</persName> und <persName key="A001199">Lork</persName>, und plauderte recht viel von dir, was mich wie immer sehr heiter und aufgeräumt machte. Punkt 12 Uhr tranken wir deine Gesundheit, dann wurde Prost Neujahr gejubelt, und und – und – <hi rend="underline" n="1">dein <rs type="person" key="A002068">Muks</rs> muste viel Bußen</hi>, aber du hättest nichts dagegen gehabt, und alle wünschten dich unzähliche mal herbey. Müde matt und abgetragen kam ich um 2 Uhr nach Hause, und konnte nicht in Bett gehen ohne dir wenigstens 2 Worte zu schreiben, wie oben zu lesen.<space unit="chars" quantity="5"/>Heute habe viel <hi rend="latintype">Visiten</hi> geschnitten, Mittag bey <hi rend="latintype"><rs type="persons" key="A000883 A000882">Hothos</rs></hi> gegeßen, und dann in die <hi rend="underline" n="1"><hi rend="latintype">Armide</hi></hi> von <hi rend="underline" n="1"><hi rend="latintype"><persName key="A000646">Gluk</persName></hi></hi> gegangen die bis nach 10 Uhr dauerte. Wie ich nach Hause komme finde ich deinen lieben Brief <hi rend="latintype">No</hi>: 13<hi rend="superscript">t</hi> und las die erste Seite halb lachend vor Freude, halb weinend vor Ärger, daß mein schön ausstudirtes Kunststük in <hi rend="latintype">Nro</hi>: 13<note xml:id="c_002" type="commentary" resp="JV">Gemeint ist die Art seiner Mitteilung über die Dresdner Anstellung, vgl. den <rs key="A040957" type="letter">Brief vom 26. Dezember 1816</rs>.</note> nun ohne <hi rend="underline" n="1">allen Effekt</hi> abblizt.<space unit="chars" quantity="5"/>Du wirst mir zwar vielleicht um mich zu trösten sagen es habe dich doch überrascht, aber es ist doch schade drum.<space unit="chars" quantity="5"/>Uebrigens ist es wunderbar daß wir die Nachricht <hi rend="underline" n="1">zu gleicher Zeit</hi> an dem nehmlichen Tage d: 25<hi rend="superscript">t</hi> X<hi rend="superscript">br</hi> erhielten.<note type="commentary" xml:id="c_003" resp="JV">Vgl. TB vom 25. Dezember 1816</note><space unit="chars" quantity="5"/>Na nu bin ich wieder getröstet, und nun laß dich herzlichst abbußen, für die Freude und Lust die aus jeder Zeile deines lieben lieben Briefes blizt. Ja wohl ist der liebe Gott gut, und ich kann ihm nicht genug danken daß du so bald einsehen und fühlen lernst daß nur <hi rend="underline" n="1">wahre</hi> Güte, <hi rend="underline" n="2">nichts </hi><hi rend="underline" n="4">halbes</hi> glüklich macht. Das leztere <hi rend="underline" n="1"><subst><del rend="overwritten"></del><add place="inline">muß</add></subst></hi> zum schreklichsten gränzenlosesten Elend führen. Er macht dir leicht die ersten Schritte, denn freylich wenn das Sprüchlein gilt<lb/>thue was ich will</p>
+                <p>o dann bin ich still – ist es leichter brav sein, aber warte nur, ich<pb/> will das Leben schon sauer machen, und Dich so <hi rend="latintype">coujoniren</hi>, Nun! – gelt es wird dir schon Angst? Ja ja halt nur die Ohren steiff.</p>
+                <p>Du bist aber <hi rend="underline" n="1">so brav</hi> daß ich gar nicht Worte genug finden kann dir ein ordentliches würdiges BelobungsDekret zu übermachen. Ein bischen Hallunt und Spißbub gutt zwar hervor, Z: B: in dem gar exakten Bericht und Tagebuch; aber ich kann auch schreiben,<lb/><hi rend="underline" n="1">Wenn dir dieser Brief zu lang sein sollte</hi> <hi rend="latintype">p p</hi><lb/>– –  –<space unit="chars" quantity="5"/>Schlafengehen –  –  <hi rend="latintype">pp</hi></p>
+                <p>Das ist noch ein Glük daß du mir noch hieher geschrieben hast, denn ich wäre in 1000 Ängsten gewesen, hätte es mir gar nicht erklären können, und dann in <placeName><settlement>Dresden</settlement></placeName> ohnfehlbar den armen <persName key="A001705">Schmidl</persName> in der ersten Wuth todt geschlagen. Nun mein <rs type="letter" key="A040955">Brief <hi rend="latintype">No</hi>: 12</rs> wird wohl machen daß du noch hieher schreibst, aber <rs type="letter" key="A040957">der 13<hi rend="superscript">t</hi></rs> spedirt schon die <hi rend="latintype">Ordre</hi><note xml:id="c_004" type="commentary" resp="JV">Gemeint ist die Aufforderung, nicht mehr nach Berlin, sondern <hi rend="latintype">Poste restante</hi> nach Dresden zu schreiben.</note> nach <placeName><settlement>Dresden</settlement></placeName>. was mir aber eigentlich nicht Recht ist, denn es hätte mich da die Posten jezt so hübsch schnell gehen /: denke doch dieser dein lezter Brief ist vom 27<hi rend="superscript">t</hi> und heute schon hier :/ hier noch eine Antwort treffen können. Nun, ich muß also desto mehr eilen nach meinem alten <placeName><settlement>Dresden</settlement></placeName>, wovon freylich meine Freunde und Arbeiten nichts wißen wollen.</p>
+                <closer rend="inline">Jezt lieber <rs type="person" key="A000213">Muks</rs> muß ich in Bett, es ist höllisch kalt bey mir, und ich bin auch hundemüde. Also gute Nacht, <rs type="person" key="A000213">mein vielgeliebtes Leben</rs>, schlafe recht gut, und träume von deinem dich ewig über alles liebenden Carl.<space unit="chars" quantity="5"/>Millionen Bußen</closer>
+            </div>
+            <div n="3" type="writingSession">
+                <opener><dateline><hi rend="underline" n="2">d: 3</hi><hi rend="superscript">t</hi></dateline></opener>
+                <p>Guten Morgen <rs type="person" key="A000213">liebes Leben</rs>, wie hast Du geschlafen? gut? ich hoffe es wohl, denn du schreibst mir ja von rothen und ditten Betten, dem gut schmetten des Eßen und besonders <hi rend="underline" n="1">Trinkens</hi> /: Ey Ey :/, da must du also auch gut schlafen.<space unit="chars" quantity="5"/>Habe Gestern gar nicht mit dir plaudern können, und heute wird‘s auch nicht viel werden, habe gar zu viel zu laufen und zu thun.<space unit="chars" quantity="5"/>Der Theater <hi rend="latintype">Chor</hi> brachte mir am Schluß des Jahres eine <hi rend="latintype">Serenade</hi> und gratulirte sämtlich. von <persName key="A000584">Gänsbacher</persName> habe ich Briefe von <hi rend="latintype"><placeName><settlement>Wien</settlement></placeName></hi>, er grüßt dich bestens, und wird heute oder Morgen nach <placeName><settlement>Innspruk</settlement></placeName> zurük reisen.<space unit="chars" quantity="5"/>Gestern früh machte ich <hi rend="latintype">Visiten</hi> und bekam welche. Mittag war ich mit <rs type="persons" key= "A001165 A001166">Lichtensteins</rs> bey <hi rend="underline" n="1"><persName key="A001134">Lauska</persName></hi>, wo wir recht vergnügt so ganz unter uns waren, und deine Gesundheit <hi rend="underline" n="1">gewiß recht von Herzen</hi> getrunken wurde.<space unit="chars" quantity="5"/>Dann hatte ich eine fatale Parthie, muste zu <persName key="A001358">Mad: Möser</persName>, um ihr mehrere Paßagen in einem <hi rend="latintype">Concert</hi> zu ändern. ich war sehr ärgerlich darüber, aber <rs type="person" key="A001358">diese Frau</rs> sezt einem die Pistole auf die Brust, der <rs type="person" key="A001333">Herr Gemahl</rs> gieng gähnend auf und ab, und das dauerte von 7 – 10 Uhr dann kam erst <hi rend="underline" n="1">Thee</hi>, nun dankte ich aber, und gieng fort in Bett.<space unit="chars" quantity="5"/>Hier lege ich dir auch das Zahnpulver Rezept bei, das mir die <persName key="A001176">Mad: <hi rend="latintype">Liman</hi></persName> Gestern schikte.<space unit="chars" quantity="5"/><rs type="persons" key="A001009">Kystings</rs> grüßen alle aufs beste. <rs type="person" key="A001009">Er</rs> hat ein Haus gekauft das ich ihm verschafte, sie werden die MantelGeschichte<note xml:id="c_005" type="commentary" resp="JV">Offensichtlich den Verkauf eines Mantels von Caroline oder ihrer Mutter betreffend, vgl. <rs type="letter" key="A040963">Brief 1817-01-17</rs>.</note> besorgen. Den Gold und Silber Stramin<note xml:id="d_002" type="definition" resp="JV">Ein Gittergewebe als Grundmaterial, auf dem Muster für Kreuzstickerei vorgegeben sind.</note> für die <persName key="A001018">Kleinwächter</persName> nehme ich mit nach <placeName><settlement>Dresden</settlement></placeName>, weil es dort eher Gelegenheit giebt ihn nach <placeName><settlement>Prag</settlement></placeName> zu schikken.<space unit="chars" quantity="5"/>Ich habe nun schon keine Ruhe und keines Bleibens mehr hier, und doch habe ich noch so 1000erley Kleinigkeiten zu thun, wozu ich kein Sizzfleisch mehr habe. Nun in <placeName><settlement>Dresden</settlement></placeName> werde ich wohl alles einholen, da werden mir die Gesellschaften keine Zeit wegfreßen, und die Muße mich<pb facs="#facs_2r"/> alle rükständigen Arbeiten und Briefe vollenden laßen.<space unit="chars" quantity="5"/>Aber jezt möchte ich schon mit dem Adam singen, der Teufel hol die Schererey, es ist gar kein Profit dabey<note xml:id="c_006" type="commentary" resp="JV"><persName key="A001668">Johann Baptist Schenk</persName>, Der Dorfbarbier, komische Oper in I Akt, Arie des Barbierbesellen Adam, Nr. 8: „Der Teufel hol' die Schererei! | Es ist gar kein Profit dabei, | Man rennt und läuft sich müd und matt | Und wird dabei nicht froh noch satt [...]“.</note> /: das ist aber nicht wahr hoffe ich, denn ich will dem <persName key="A002434">Schleßinger</persName> noch was abnehmen zur Reise<note xml:id="c_009" type="commentary" resp="JV">Vgl. <rs type="diaryDay" key="A060003">TB vom 3. Januar 1817</rs>.</note> :/ <hi rend="underline" n="1">hier</hi> soll ich Zensiren, <hi rend="underline" n="1">dort</hi> einen <hi rend="latintype">Visitiren p p p<note xml:id="c_007" type="commentary" resp="JV">Vgl. ebenfalls im Dorfbarbier, Septett Nr. 6, darin der Dorfbarbier Lux: „Hier soll ich barbieren, dort Todte kuriren. | Hier einen seciren und dorten klystiren. | Ich werde noch ein Narr.“</note></hi><space unit="chars" quantity="5"/>Nun <hi rend="latintype">adje</hi>, <rs type="person" key="A000213">Muks</rs>. Neues weiß ich nichts, als daß man häufig davon spricht, ein gewisser <hi rend="underline" n="1"><hi rend="latintype"><persName key="A002068">Carl Maria</persName></hi></hi> habe sich sehr heftig in eine gewiße <persName key="A000213">Brandt</persName> verschammerirt, und thue eigentlich nichts anderes als an sie Briefe schreiben.</p><space unit="chars" quantity="5"/>
+                <closer rend="inline">Um diesem heillosen Geschwäzz Schranken zu sezzen, schließe ich /vor der Hand :/ und buße dich herzlichst ab, bis Morgen, ein weiteres Gekrazze erfolgt, von deinem <rs type="person" key="A002068">paßabel fetten und ditten Mukkenkönig</rs>.</closer>
+            </div>
+            <div n="4" type="writingSession">
+                <opener><dateline>d: 4<hi rend="superscript">t</hi></dateline></opener>
+                <p n="1">Ich muß diesen Brief heute Vormittag schließen und auf die Post schleppen, weil ich Mittags spät bei der <persName key="A001536">Gräfin Rek</persName> eße, und es also nicht könnte, es ist mir deßhalb fatal, weil ich hoffte heut ein Schreiben von <rs type="person" key="A000213">H: <hi rend="latintype">v</hi>: Schneefuß</rs> zu erhalten, deßen Empfang ich wenigstens gleich hätte anzeigen können. Gestern schrieb ich ausführlich an <hi rend="latintype"><rs type="persons" key="A000111 A000114">Beers</rs></hi> in <hi rend="latintype"><placeName><settlement>Rom</settlement></placeName></hi> und legte deinen Brief bei. Du <rs type="person" key="A000213">Schlingel</rs> hast mir aber doch nichts geschikt wodurch du dich für den Battist Muß:<supplied resp="JV">elin</supplied><note xml:id="d_003" type="definition" resp="EB">Battist ist „die feinste, sehr dicht und fest gewebte weiße Leinwand, deren Name wahrscheinlich von dem indischen Wort Bastas“ stammt; Musselin ein „feines, locker gewebtes, halbdurchsichtiges baumwollenes Gewebe“ (Meyers Konversationslexikon). Offensichtlich hatte Caroline diesen Stoff von Beers als Geschenk erhalten.</note> bedankt hättest, ich habe es unterdeßen in deinem Namen gethan.<space unit="chars" quantity="5"/>Gestern Mittag war ich bey <hi rend="latintype"><persName key="A002434">Weiss</persName></hi> mit den beiden <hi rend="latintype"><rs type="persons" key="A001599 A001600">Rombergs</rs></hi>, und dann Abends in großer Gesellschaft beim <persName key="A001611">StaatsRath Rosenstiel</persName>. Deine Gesundbeit wurde wie immer aus voller Seele getrunken, und man erkundigte sich fleißig nach dir, besonders <hi rend="latintype"><rs type="persons" key="A001134 A001133">Lauskas</rs></hi> haben mir noch extra Grüße aufgetragen.</p>
+                <p>Heute Mittag können <rs type="persons" key="A000947 A000946">Junghs</rs> billigerweise die Ohren klingen, denn ich werde mit <persName key="A001961">Tiedge</persName> und der <rs type="person" key="A001536">Gräfin</rs> viel von ihnen sprechen.<space unit="chars" quantity="5"/>Ich bin ordentlich in einer Art von Angst daß ich heute keinen Brief von dir bekomme, oder überhaupt <hi rend="underline" n="1">hier</hi> keinen mehr, weil ich in meinem <hi rend="latintype">No</hi>: 13 dich schon nach <placeName><settlement>Dresden</settlement></placeName> an<damage agent="seal"><supplied resp="JV">gewiesen</supplied></damage> habe. Mein Trost ist daß ich erst auf <hi rend="latintype">No</hi>: 12 Antwort erhalten muß. <damage agent="seal"><supplied>Ich</supplied></damage> kann gar nicht zu Ende kommen mit einer <subst>
+                    <del rend="overwritten">m</del>
+                    <add place="inline">M</add>
+                </subst>
+                    enge dummer Kleinigkeiten, <damage agent="seal"><supplied>und bin</supplied></damage> darüber recht ärgerlich, denn du weist wie ich bin, wenn ich einmal beschloßen ha<damage agent="seal"><supplied>be</supplied></damage> fort zu gehen.<space unit="chars" quantity="5"/>Wenn ich doch gleich durch <placeName><settlement>Dresden</settlement></placeName> <hi rend="underline" n="1">durch</hi> zu dir mein geliebter <rs type="person" key="A000213">Muks</rs> fahren dürfte, aber freylich ist dazu wohl vor der Hand keine Aussicht, wie du selbst ganz richtig bemerkst, vielleicht schikt mich der <rs type="person" key="A000537">König</rs> nach <hi rend="latintype"><placeName><settlement>Wien</settlement></placeName></hi> oder sonst wohin um Leute zu <hi rend="latintype">engagieren</hi>, und dann besuche ich <rs type="person" key="A000213">Muks</rs>.<space unit="chars" quantity="5"/>Hier haben sich schon eine ganze Portion Leute gemeldet. die weg wollen. Wie sähe es denn mit der <persName key="A000692">Grünbaum</persName> aus? klopfe doch einmal an. auch <persName key="A000305">Klement</persName> möchte ich gerne haben.<space unit="chars" quantity="5"/>Wenn es nach meinem Willen geht, so ist dieß der vorlezte Brief den du von hieraus erhältst.<space unit="chars" quantity="5"/><hi rend="latintype">a prospos</hi> ich habe vergeßen unterthänigst zu melden, daß ich einen <hi rend="underline" n="1">sehr schönen</hi> neuen <hi rend="underline" n="1">blauen Rok</hi> und Hoserln, am Neujahrstage angehabt habe. kostet aber auch schöne Möpse. Wie geht es dir denn <rs type="person" key="A000213">geliebtes Leben</rs> bist du noch so heiter wie dein lieber Brief <hi rend="latintype">No</hi>: 13 ausspricht?<space unit="chars" quantity="5"/>Was sagen denn die H: Prager von meiner neuen Anstellung? An <hi rend="latintype"><persName key="A000615">Gerle</persName></hi> werde ich von <placeName><settlement>Dresden</settlement></placeName> aus schreiben, und auch mein Bild schikken.<note xml:id="c_008" type="commentary" resp="JV">Vermutlich der im November 1816 erschienene Stich von Friedrich Jügel, den W. A. Gerle in seiner Buchhandlung anbieten oder als Redakteur der Prager Zeitung  anzeigen sollte (vgl. auch den <rs type="letter" key="A040963">Brief vom 17. Januar 1817</rs>). </note> ich werde schon ein duzend hier kaufen müßen und sie in alle Welt versenden. Nun <hi rend="latintype">adio</hi> geliebter <rs type="person" key="A000213">Mukenfuß</rs>. ich muß ausgehen, und <hi rend="latintype">Visiten</hi> schneiden. Gott behüte dich gesund und froh, Schöne Grüße an die <rs type="person" key="A000214">Mutter</rs>, an <rs type="persons" key="A000947 A000946">Junghs</rs>, <persName key="A000041">Apitz</persName>, <hi rend="latintype">ppp</hi><space unit="chars" quantity="5"/>Sey brav, und mache daß die <hi rend="underline" n="1">6 Speisen</hi> die du schon kochen kannst, sich alle Monate verdoppeln, dann haben wir genug Auswahl auf LebensZeit.</p>
+                <closer>ich küße dich Millionenmal <rs type="person" key="A000213">mein theures liebes Leben</rs>, Ewig Dein <signed><hi rend="latintype">Carl</hi></signed>.</closer>
+            </div>
+        </body>
+    </text>
+</TEI>

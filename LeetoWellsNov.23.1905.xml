@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../Desktop/correspondence%20schema%20andTEIwork/correspondenceProposal.rng.xml" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:math="http://www.w3.org/1998/Math/MathML"
+  xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Correspondence of Vernon Lee to H.G. Wells</title>
+        <author>Lee, Vernon</author>
+        <editor>Gagel, Mandy</editor>
+      </titleStmt>
+      <editionStmt>
+        <edition>First edition, digital</edition>
+        <respStmt>
+          <resp>Transribed by</resp>
+          <name>Mandy Gagel</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoded by</resp>
+          <name>Mandy Gagel</name>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Loyola University</publisher>
+        <pubPlace>Chicago, Il</pubPlace>
+        <date>2012</date>
+      </publicationStmt>
+      <seriesStmt>
+        <p>Digital born transcriptions of letters from Vernon Lee to H.G. Wells</p>
+      </seriesStmt>
+      <notesStmt>
+        <note type="summary">Concerns Lee's opinions of Wells' novel Kipps, and theories on modern cizilization in general. She also explains her ailments, with gout and inability to work.</note>
+      </notesStmt>
+      <sourceDesc>
+        <correspDesc>
+          <sender>
+            <persName>Vernon Lee</persName>
+          </sender>
+          <addressee>
+            <persName>H.G. Wells</persName>
+          </addressee>
+          <placeSender>
+            <placeName>Il Palmerino, San Gervasio, Florence</placeName>
+          </placeSender>
+          <placeAddressee>
+            <placeName>Wells home</placeName>
+          </placeAddressee>
+          <dateSender>
+            <date when="1905-11-23">November 23, 1905</date>
+          </dateSender>
+        </correspDesc>
+        <msDesc>
+          <msIdentifier>
+            <repository>Wells Archive at UI, Urban Champaign</repository>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Pilot project for a digital edition of the selected letters of Vernon Lee</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Various explanations here about editing choices we made.</p>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <textClass>
+        <keywords scheme="Lee Letters">
+          <list>
+            <item>letter
+              <date when="1905-12-23"/>
+            </item>
+          </list>
+        </keywords>
+      </textClass>
+      <langUsage>
+        <language ident="eng">English</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change>Yet to certify certain unreadable words</change>
+    </revisionDesc>
+  </teiHeader>
+    <text type="letter">
+      <body>
+        <div type="address">
+          <!-- address is typed letterhead -->
+          <address rend="right">
+          <addrLine>Il Palmerino</addrLine>
+          <addrLine>San Gervasio</addrLine>
+          <addrLine>Florence</addrLine>
+        </address>
+        </div>
+        <div type="writingSession">
+          <dateline rend="left">Nov. 23. 1905</dateline></div>
+        <div type="writingSession">
+          <salute>Dear <rs type="person">Mr Wells,</rs></salute>
+          <p>Your <hi rend="underline"><rs type="book">Kipps</rs></hi> came just at the moment when it was most wanted, and has cheered evenings when I could read but very little + felt inclined to read even less. In other words I have been, + still am, rather ill: that gout which caused me to borrow your hospital slippers (expecting secretly that they would walk me into some wonderland beyond the flaming bounds of space + time) - that gout turned eventually into gouty anuria, which, while leaving me on my feet has momentarily taken away all my power of work + attention. Even a letter like this leaves me with an emptied out brain. This must explain why I have not returned the <unclear>[Balhoin?]</unclear> book you kindly lent me - (may I keep it now till I am well enough to finish it?) - why I have not written to urge the fulfillment of your + <rs type="person">Mrs Wells’</rs> promise to come to me; and finally why I cannot now say anything worth reading about your <hi rend="underline"><rs type="book">Kipps</rs></hi>. It amused and often saddened me immensely; but it has not for me, the extraordinary attraction, the mixed poetry and philosophy, of the <hi rend="underline"><rs type="book">Food of the Gods</rs></hi> + of <hi rend="underline"><rs type="book">Mr Lewisham</rs></hi>. I think if I may say so, that you are a little too angry in it, + therefore angry with things not worthy of anger. When I was young I used indeed to think that the dullness, unkindness, the moral + intellectual wastefulness + starvation of the world were due to mis-arrangement. Now, I am tempted to think they are due mainly to the poverty of human material. I think my position as against yours is that progress has been not too slow but too rapid, especially to our country, and that the immense majority of all classes is in the position of your Kipps, inheriting a fortune made by their betters and which it knows only how to squander. Civilisation has been made by <hi rend="strikethrough">a few</hi> an elite, + the majority has got hold of its material side <hi rend="above">+ its crass practical moral one</hi> - its telephones + motor cars, <hi rend="above">its laws + etiquette +</hi> without being able to assimilate its spirit. Of course this hangs together with my belief (which was also <rs type="person">Gabriel Tarde’s</rs>) that progress will slacken off, not hurry on, simply because it will have to work deeper + deeper. It seems to me that, spiritually speaking, we are still rather like the peoples of the <rs type="location">Mediterranean basin</rs>: the coasts covered with towns full of sophists + artists, the <hi rend="underline">Hinterland</hi> given up to bears + savages - I am not speaking of classes, but of individuals, + even of the various portions of individual souls: we are all half civilised only.</p>
+            <p>I want some day to develop this idea in writing about your + other utopias; indeed I have planned a preface to a book of wh. I shall beg you to accept the dedication, as it is the first, for years, in wh. I have dealt with modern questions. But it may be months now before I can write; even this scrawl has tired me.</p>
+          <p>I am much interested in your fight with the School masters. But the education of the young is surely <hi rend="above">still</hi> based mainly on the secret desire to prevent their making a noise, tearing clothes, spoiling furniture + being sick, morally as well as literally?</p>
+          <closer>Give my love to your <rs type="person">wife</rs> + believe me
+            <hi rend="right">Yours truly</hi></closer>
+          <signed><rs type="person"><hi rend="underline"><hi rend="right">V. Paget</hi></hi></rs></signed>
+        </div>
+      </body>
+    </text>
+</TEI>

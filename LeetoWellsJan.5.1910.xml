@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../Desktop/correspondence%20schema%20andTEIwork/correspondenceProposal.rng.xml" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:math="http://www.w3.org/1998/Math/MathML"
+  xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Correspondence of Vernon Lee to H.G. Wells</title>
+        <author>Lee, Vernon</author>
+        <editor>Gagel, Mandy</editor>
+      </titleStmt>
+      <editionStmt>
+        <edition>First edition, digital</edition>
+        <respStmt>
+          <resp>Transribed by</resp>
+          <name>Mandy Gagel</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoded by</resp>
+          <name>Mandy Gagel</name>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Loyola University</publisher>
+        <pubPlace>Chicago, Il</pubPlace>
+        <date>2012</date>
+      </publicationStmt>
+      <seriesStmt>
+        <p>Digital born transcriptions of letters from Vernon Lee to H.G. Wells</p>
+      </seriesStmt>
+      <notesStmt>
+        <note type="summary">Written to Wells concerning the birth of his daughter with mistress Amber Reeves. Lee congratulates him but is worried about his "self-contradictions".</note>
+      </notesStmt>
+      <sourceDesc>
+        <correspDesc>
+          <sender>
+            <persName>Vernon Lee</persName>
+          </sender>
+          <addressee>
+            <persName>H.G. Wells</persName>
+          </addressee>
+          <placeSender>
+            <placeName>Il Palmerino, San Gervasio, Florence</placeName>
+          </placeSender>
+          <placeAddressee>
+            <placeName>Wells home</placeName>
+          </placeAddressee>
+          <dateSender>
+            <date when="1910-01-05">January 5, 1910</date>
+          </dateSender>
+        </correspDesc>
+        <msDesc>
+          <msIdentifier>
+            <repository>Vernon Lee archive, Colby College, Maine</repository>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Pilot project for a digital edition of the selected letters of Vernon Lee</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>This labeled an "Exact Copy" by Lee. Though since it is in draft form, it may have never been sent. Must see if the sent letter is in Wells archive.</p>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <textClass>
+        <keywords scheme="Lee Letters">
+          <list>
+            <item>letter
+              <date when="1910-01-05"/>
+            </item>
+          </list>
+        </keywords>
+      </textClass>
+      <langUsage>
+        <language ident="eng">English</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change>Yet to certify certain unreadable words</change>
+    </revisionDesc>
+  </teiHeader>
+    <text type="letter">
+      <body>
+        <div type="address">
+          <!-- address is typed letterhead -->
+          <address rend="right">
+          <addrLine>Il Palmerino</addrLine>
+          <addrLine>San Gervasio</addrLine>
+          <addrLine>Florence</addrLine>
+        </address>
+        </div>
+        <div type="writingSession">
+          <p><hi rend="left">Exact Copy</hi></p></div>
+        <div type="writingSession">
+          <dateline rend="left">Jan 5. 1910</dateline></div>
+        <div type="writingSession">
+          <salute><rs type="person">My dear Mr Wells,</rs></salute>
+          <p>Thanks for your letter. <hi rend="strikethrough">It leaves me.</hi> I still am, perhaps shall always be, deeply perplexed before your personality as a human being, or rather as that dualism (which is so often a discord) the human being who teaches other people.</p>
+          <p>Perhaps this perplexity is due to the <unclear>[?]</unclear> of a Samurai being a “poetic” man, and the disbeliever in Samurai and Samuraidom <hi rend="above">on the whole,</hi> a <hi rend="above">rather</hi> Samurai-sh woman.</p>
+          <p>Be this as it may, I cannot <hi rend="strikethrough">like this business for the life of me.</hi> <hi rend="above">for the life of me</hi> like (though I can perfectly account for) what strikes me as a tangle of self-contradictions on your part - But I like you - the rest of you -  and I love + respect your books. At any rate I offer up unlistened-to, but I hope not unfulfilled, prayers that this little daughter, as well as the little sons <hi rend="above">I am already fond of</hi>, may be happy + make other folks happy.</p> 
+              <closer>And so I remain, dear Mr Wells, your sincere, affectionate respectful and for that very reason decidedly distressed friend</closer>
+          <signed><rs type="person"><hi rend="underline"><hi rend="right">V. Paget</hi></hi></rs></signed>
+        </div>
+    </body>
+  </text>
+</TEI>

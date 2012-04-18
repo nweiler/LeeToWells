@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TEI P5 for correspondence</title>
+                <author>Peter Stadler</author>
+            </titleStmt>
+            <publicationStmt>
+                <availability status="restricted">
+                    <p>
+                        <ref type="license"
+                            target="http://creativecommons.org/licenses/by-nc-sa/3.0/"> Distributed
+                            by the author under a Creative Commons
+                            Attribution-NonCommercial-ShareAlike 3.0 Unported License </ref>
+                    </p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Written from scratch (with a lot of help from tei-c.org).</p>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc status="draft">
+            <change who="Peter Stadler" when="2011-06-27">prepared first draft for discussion on
+                TEI-CORRESP-SIG</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docTitle>
+                    <titlePart type="main">TEI P5 for correspondence</titlePart>
+                    <titlePart type="sub">A recommendation for the encoding of correspondence
+                        material</titlePart>
+                </docTitle>
+                <docAuthor>Peter Stadler</docAuthor>
+                <docDate>Draft – June 2011</docDate>
+            </titlePage>
+        </front>
+        <body>
+            <div type="section">
+                <head>Introduction</head>
+                <p>This document is distilled from the accordant WeGA_letters.odd.xml file which is
+                    used for the encoding of correspondence material at the <ref
+                        target="http://www.weber-gesamtausgabe.de"
+                        >Carl-Maria-von-Weber-Gesamtausgabe</ref>. The intention of this document is
+                    mainly to provide the formal specifications of key additions and modifications
+                    that were made to the current TEI P5 as a starting point for discussion within
+                    the TEI SIG on correspondence. There is definitely room for improvements,
+                    especially as we mostly encode from autograph material and not from printed
+                    editions of letters.</p>
+            </div>
+            <div type="section">
+                <head>Modifications in the header part</head>
+                <p>The only modification to the header part is the injection of a custom element
+                        <gi>correspDesc</gi> into <gi>sourceDesc</gi>. This correspondence
+                    description groups together meta data about the (historic) correspondence such
+                    as sender, addressee etc. While the data provided here could possibly be
+                    extracted from some elements within <gi>text</gi> the aim was to keep this data
+                    at one place as it mirrors typical catalogue data about correspondence
+                    material.</p>
+                <p>A question that should be addressed is whether this data should better be stored
+                    within <gi>profileDesc</gi> rather than inside <gi>sourceDesc</gi>: it propably
+                    boils down to the question whether one regards the information as related to the
+                    text or to the document. Furthermore the <name>St. Louis Freedom Suits Legal
+                        Encoding Project</name> proposed a similar <term>caseDesc</term> for the
+                    encoding of legal documents.<note>Cf. <ref
+                            target="http://wulibraries.typepad.com/digitalgateway/2010/11/tei-legal-encoding-extensions-first-draft.html"
+                            >TEI Legal Encoding Extensions: First Draft</ref>.</note> So it might be
+                    a good idea as well to discuss these common issues of <emph>genre specific meta
+                        data</emph> in a wider community.</p>
+            </div>
+            <div type="section">
+                <head>Modifications in the text part</head>
+                <p>Concerning the text part the schema is tailored to allow only for one or more
+                        <gi>div</gi>s that are typed with <emph>writingSession</emph>. This reflects
+                    our findings with the Weber letters that they may stretch across several
+                        <emph>sessions of writing</emph>, e.g. days or before and after noon where
+                    each may include its own <gi>opener</gi> and <gi>closer</gi>. Furthermore the
+                    destinction of different <emph>writing sessions</emph> is not necessarily a
+                    temporal one but can be made of different authors. So if person A starts the
+                    letter and person B finishes the letter the encoding would result in two
+                    seperate <gi>div</gi>s. Another advantage of this kind of structuring the text
+                    is that a longer <emph>postscript</emph> can be treated as a seperate
+                        <gi>div</gi> and no adjustments need to be made to the element
+                        <gi>postscript</gi> itself. </p>
+                <p>The <emph>address</emph> is regarded as part of the text (since we are dealing
+                    with autograph correspondence material mostly) and for reasons of consistency is
+                    wrapped in a <gi>div</gi> as well. This <gi>div</gi> may appear only once, at
+                    the beginning of <gi>body</gi>, and is typed with <emph>address</emph>. Quite
+                    redundandly its only child element is <gi>address</gi> but the aim was not to
+                    violate too many content models.</p>
+            </div>
+            <div type="section">
+                <head>Formal specification</head>
+                <schemaSpec ident="correspondenceProposal" xml:lang="en" start="TEI"
+                    prefix="correspondence_">
+                    <moduleRef key="core"/>
+                    <moduleRef key="tei"/>
+                    <moduleRef key="header"/>
+                    <moduleRef key="textstructure"/>
+                    <moduleRef key="msdescription"/>
+                    <moduleRef key="namesdates"/>
+                    <moduleRef key="transcr"/>
+                    <!-- 
+                        Put in here further modules you need ...
+                    -->
+                    <!--
+                    <moduleRef key="linking"/>
+                    <moduleRef key="textcrit"/>
+                    <moduleRef key="figures"/>
+                    -->
+
+                    <moduleSpec ident="correspondence" mode="add">
+                        <desc xml:lang="en">Extra elements for encoding correspondence
+                            material.</desc>
+                    </moduleSpec>
+
+                    <elementSpec ident="correspDesc" mode="add" module="correspondence">
+                        <gloss xml:lang="en">correspondence description</gloss>
+                        <desc xml:lang="en">groups together meta data about the (historic)
+                            correspondence such as sender, addressee etc.</desc>
+                        <classes>
+                            <memberOf key="model.sourceDescPart"/>
+                        </classes>
+                        <content>
+                            <rng:oneOrMore xmlns:rng="http://relaxng.org/ns/structure/1.0">
+                                <rng:ref name="model.correspDescPart"
+                                    xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
+                            </rng:oneOrMore>
+                        </content>
+                        <exemplum xml:lang="en">
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <correspDesc>
+                                    <sender>
+                                        <persName><![CDATA[<!-- name of sender -->]]></persName>
+                                    </sender>
+                                    <addressee>
+                                        <persName><![CDATA[<!-- name of addressee -->]]></persName>
+                                    </addressee>
+                                    <placeSender>
+                                        <placeName><![CDATA[<!-- place of sender -->]]></placeName>
+                                    </placeSender>
+                                    <placeAddressee>
+                                        <placeName><![CDATA[<!-- place of addressee -->]]></placeName>
+                                    </placeAddressee>
+                                    <dateSender>
+                                        <date when="1865-01-03"
+                                            ><![CDATA[<!-- the date when the letter (postcard etc.) was sent -->]]></date>
+                                    </dateSender>
+                                    <dateAddressee>
+                                        <date when="1865-01-06"
+                                            ><![CDATA[<!-- the date when the letter (postcard etc.) was received -->]]></date>
+                                    </dateAddressee>
+                                    <incipit><![CDATA[<!-- the text incipit -->]]></incipit>
+                                    <context>
+                                        <ref target="http://some.uri"
+                                            ><![CDATA[<!-- next letter from the current addressee to the current sender -->]]></ref>
+                                        <ref target="http://some.other.uri"
+                                            ><![CDATA[<!-- previous letter from the current addressee to the current sender -->]]></ref>
+                                    </context>
+                                </correspDesc>
+                            </egXML>
+                        </exemplum>
+                    </elementSpec>
+
+                    <classSpec ident="model.correspDescPart" type="model" module="correspondence"
+                        mode="add">
+                        <desc>groups elements which may be used inside correspDesc.</desc>
+                    </classSpec>
+
+                    <elementSpec ident="addressee" mode="add" module="correspondence">
+                        <gloss xml:lang="en">addressee</gloss>
+                        <desc xml:lang="en">provides (one of) the addressee(s) of the
+                            correspondence.</desc>
+                        <classes>
+                            <memberOf key="att.personal"/>
+                            <memberOf key="att.datable"/>
+                            <memberOf key="att.typed"/>
+                            <memberOf key="att.responsibility"/>
+                            <memberOf key="att.global.linking"/>
+                            <memberOf key="model.correspDescPart"/>
+                        </classes>
+                        <content>
+                            <rng:oneOrMore xmlns:rng="http://relaxng.org/ns/structure/1.0">
+                                <rng:choice xmlns:rng="http://relaxng.org/ns/structure/1.0">
+                                    <rng:ref name="model.nameLike.agent"
+                                        xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
+                                    <rng:ref name="macro.specialPara"
+                                        xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
+                                </rng:choice>
+                            </rng:oneOrMore>
+                        </content>
+                        <exemplum xml:lang="en">
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <addressee>
+                                    <persName><![CDATA[<!-- name of addressee -->]]></persName>
+                                </addressee>
+                            </egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>If there's more than one addressee, the element <gi>addressee</gi>
+                                may be repeated inside <gi>correspDesc</gi>.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ident="sender" mode="add" module="correspondence">
+                        <gloss xml:lang="en">sender</gloss>
+                        <desc xml:lang="en">provides (one of) the sender(s) of the
+                            correspondence.</desc>
+                        <classes>
+                            <memberOf key="att.personal"/>
+                            <memberOf key="att.datable"/>
+                            <memberOf key="att.typed"/>
+                            <memberOf key="att.responsibility"/>
+                            <memberOf key="att.global.linking"/>
+                            <memberOf key="model.correspDescPart"/>
+                        </classes>
+                        <content>
+                            <rng:oneOrMore xmlns:rng="http://relaxng.org/ns/structure/1.0">
+                                <rng:choice xmlns:rng="http://relaxng.org/ns/structure/1.0">
+                                    <rng:ref name="model.nameLike.agent"
+                                        xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
+                                    <rng:ref name="macro.specialPara"
+                                        xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
+                                </rng:choice>
+                            </rng:oneOrMore>
+                        </content>
+                        <exemplum xml:lang="en">
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <sender>
+                                    <persName><![CDATA[<!-- name of sender -->]]></persName>
+                                </sender>
+                            </egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>If there's more than one sender, the element <gi>sender</gi> may be
+                                repeated inside <gi>correspDesc</gi>.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ident="placeSender" mode="add" module="correspondence">
+                        <gloss xml:lang="en">place of sender</gloss>
+                        <desc xml:lang="en">provides the place(s) of the sender(s) from where the
+                            correspondence material was sent.</desc>
+                        <classes>
+                            <memberOf key="att.naming"/>
+                            <memberOf key="att.typed"/>
+                            <memberOf key="att.responsibility"/>
+                            <memberOf key="att.global.linking"/>
+                            <memberOf key="model.correspDescPart"/>
+                        </classes>
+                        <content>
+                            <rng:oneOrMore xmlns:rng="http://relaxng.org/ns/structure/1.0">
+                                <rng:choice xmlns:rng="http://relaxng.org/ns/structure/1.0">
+                                    <rng:ref name="model.placeNamePart"
+                                        xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
+                                    <rng:ref name="macro.specialPara"
+                                        xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
+                                </rng:choice>
+                            </rng:oneOrMore>
+                        </content>
+                        <exemplum xml:lang="en">
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <placeSender>
+                                    <placeName><![CDATA[<!-- place of sender -->]]></placeName>
+                                </placeSender>
+                            </egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>If there happens to be more than one sender there can be the need for
+                                several <gi>placeSender</gi>. In this case the <gi>placeSender</gi>
+                                may be repeated inside <gi>correspDesc</gi> and linked to the
+                                corresponding <gi>sender</gi> with a <att>corresp</att>
+                                attribute.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ident="placeAddressee" mode="add" module="correspondence">
+                        <gloss xml:lang="en">place of addressee</gloss>
+                        <desc xml:lang="en">provides the place(s) of the addressee(s) to whom the
+                            correspondence material was sent.</desc>
+                        <classes>
+                            <memberOf key="att.naming"/>
+                            <memberOf key="att.typed"/>
+                            <memberOf key="att.responsibility"/>
+                            <memberOf key="att.global.linking"/>
+                            <memberOf key="model.correspDescPart"/>
+                        </classes>
+                        <content>
+                            <rng:oneOrMore xmlns:rng="http://relaxng.org/ns/structure/1.0">
+                                <rng:choice xmlns:rng="http://relaxng.org/ns/structure/1.0">
+                                    <rng:ref name="model.placeNamePart"
+                                        xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
+                                    <rng:ref name="macro.specialPara"
+                                        xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
+                                </rng:choice>
+                            </rng:oneOrMore>
+                        </content>
+                        <exemplum xml:lang="en">
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <placeAddressee>
+                                    <placeName><![CDATA[<!-- place of addressee -->]]></placeName>
+                                </placeAddressee>
+                            </egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>If there happens to be more than one addresse there can be the need
+                                for several <gi>placeAddressee</gi>. In this case the
+                                    <gi>placeAddressee</gi> may be repeated inside
+                                    <gi>correspDesc</gi> and linked to the corresponding
+                                    <gi>addressee</gi> with a <att>corresp</att> attribute.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ident="dateSender" mode="add" module="correspondence">
+                        <gloss xml:lang="en">date of sender</gloss>
+                        <desc xml:lang="en">provides a wrapper element for the date when the
+                            correspondence material was sent.</desc>
+                        <classes>
+                            <!-- <memberOf key="att.datable"/> -->
+                            <memberOf key="att.responsibility"/>
+                            <memberOf key="att.global.linking"/>
+                            <memberOf key="model.correspDescPart"/>
+                        </classes>
+                        <content>
+                            <rng:choice xmlns:rng="http://relaxng.org/ns/structure/1.0">
+                                <rng:ref name="model.dateLike"
+                                    xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
+                                <rng:ref name="macro.specialPara"
+                                    xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
+                            </rng:choice>
+                        </content>
+                        <exemplum xml:lang="en">
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <dateSender>
+                                    <date when="1865-01-03"
+                                        ><![CDATA[<!-- the date when the letter (postcard etc.) was sent -->]]></date>
+                                </dateSender>
+                            </egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>The <gi>dateSender</gi> element is intended to be a wrapper for a
+                                    <gi>date</gi> element and may link to the appropriate
+                                    <gi>sender</gi> by a <gi>corresp</gi> attribute.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ident="dateAddressee" mode="add" module="correspondence">
+                        <gloss xml:lang="en">date of addressee</gloss>
+                        <desc xml:lang="en">provides a wrapper element for the date when the
+                            correspondence material was received.</desc>
+                        <classes>
+                            <!-- <memberOf key="att.datable"/> -->
+                            <memberOf key="att.responsibility"/>
+                            <memberOf key="att.global.linking"/>
+                            <memberOf key="model.correspDescPart"/>
+                        </classes>
+                        <content>
+                            <rng:choice xmlns:rng="http://relaxng.org/ns/structure/1.0">
+                                <rng:ref name="model.dateLike"
+                                    xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
+                                <rng:ref name="macro.specialPara"
+                                    xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
+                            </rng:choice>
+                        </content>
+                        <exemplum xml:lang="en">
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <dateAddressee>
+                                    <date when="1865-01-06"
+                                        ><![CDATA[<!-- the date when the letter (postcard etc.) was received -->]]></date>
+                                </dateAddressee>
+                            </egXML>
+                        </exemplum>
+                        <remarks>
+                            <p>The <gi>dateAddressee</gi> element is intended to be a wrapper for a
+                                    <gi>date</gi> element and may link to the appropriate
+                                    <gi>addressee</gi> by a <gi>corresp</gi> attribute.</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ident="context" mode="add" module="correspondence">
+                        <gloss xml:lang="en">context</gloss>
+                        <desc xml:lang="en">provides references to preceding or following
+                            correspondence between the same partners (= German
+                            "Korrespondenzstelle").</desc>
+                        <classes>
+                            <memberOf key="model.correspDescPart"/>
+                        </classes>
+                        <content>
+                            <rng:oneOrMore xmlns:rng="http://relaxng.org/ns/structure/1.0">
+                                <rng:ref name="ref"
+                                    xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
+                            </rng:oneOrMore>
+                        </content>
+                        <exemplum xml:lang="en">
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <context>
+                                    <ref target="http://some.uri"
+                                        ><![CDATA[<!-- next letter from the current addressee to the current sender -->]]></ref>
+                                    <ref target="http://some.other.uri"
+                                        ><![CDATA[<!-- previous letter from the current addressee to the current sender -->]]></ref>
+                                </context>
+                            </egXML>
+                        </exemplum>
+                    </elementSpec>
+
+                    <elementSpec ident="incipit" mode="change">
+                        <classes>
+                            <memberOf key="model.correspDescPart"/>
+                        </classes>
+                    </elementSpec>
+                    
+                    <!--
+                        If you do not need or want the changes to the text part
+                        just comment out the following two <elementSpec>s
+                    -->
+
+                    <elementSpec ident="body" mode="change" module="textstructure">
+                        <content>
+                            <rng:optional>
+                                <rng:element name="div">
+                                    <rng:ref name="address"/>
+                                    <rng:attribute name="type">
+                                        <rng:value>address</rng:value>
+                                    </rng:attribute>
+                                    <rng:optional>
+                                        <rng:attribute name="facs">
+                                            <rng:ref name="data.pointer"/>
+                                        </rng:attribute>
+                                    </rng:optional>
+                                </rng:element>
+                            </rng:optional>
+                            <rng:interleave>
+                                <rng:zeroOrMore>
+                                    <rng:ref name="addSpan"/>
+                                </rng:zeroOrMore>
+                                <rng:zeroOrMore>
+                                    <rng:ref name="anchor"/>
+                                </rng:zeroOrMore>
+                                <rng:zeroOrMore>
+                                    <rng:ref name="pb"/>
+                                </rng:zeroOrMore>
+                                <rng:oneOrMore>
+                                    <rng:ref name="div"/>
+                                </rng:oneOrMore>
+                            </rng:interleave>
+                        </content>
+                    </elementSpec>
+
+                    <elementSpec ident="div" mode="change" module="textstructure">
+                        <classes mode="change">
+                            <memberOf key="att.divLike" mode="delete"/>
+                        </classes>
+                        <content>
+                            <rng:group>
+                                <rng:zeroOrMore>
+                                    <rng:choice>
+                                        <rng:ref name="model.divTop"/>
+                                        <rng:ref name="model.global"/>
+                                    </rng:choice>
+                                </rng:zeroOrMore>
+                                <rng:optional>
+                                    <rng:choice>
+                                        <rng:group>
+                                            <rng:oneOrMore>
+                                                <rng:choice>
+                                                  <rng:ref name="model.divLike"/>
+                                                  <rng:ref name="model.divGenLike"/>
+                                                </rng:choice>
+                                                <rng:zeroOrMore>
+                                                  <rng:ref name="model.global"/>
+                                                </rng:zeroOrMore>
+                                            </rng:oneOrMore>
+                                        </rng:group>
+                                        <rng:group>
+                                            <rng:oneOrMore>
+                                                <rng:group>
+                                                  <rng:ref name="model.common"/>
+                                                </rng:group>
+                                                <rng:zeroOrMore>
+                                                  <rng:ref name="model.global"/>
+                                                </rng:zeroOrMore>
+                                            </rng:oneOrMore>
+                                            <rng:zeroOrMore>
+                                                <rng:choice>
+                                                  <rng:ref name="model.divLike"/>
+                                                  <rng:ref name="model.divGenLike"/>
+                                                </rng:choice>
+                                                <rng:zeroOrMore>
+                                                  <rng:ref name="model.global"/>
+                                                </rng:zeroOrMore>
+                                            </rng:zeroOrMore>
+                                        </rng:group>
+                                    </rng:choice>
+                                    <rng:optional>
+                                        <!--<rng:group>
+                                            <rng:ref name="model.divBottom"/>
+                                        </rng:group>
+                                        <rng:zeroOrMore>
+                                            <rng:ref name="model.global"/>
+                                            </rng:zeroOrMore>-->
+                                        <rng:interleave>
+                                            <rng:optional>
+                                                <rng:ref name="closer"/>
+                                            </rng:optional>
+                                            <rng:zeroOrMore>
+                                                <rng:ref name="signed"/>
+                                            </rng:zeroOrMore>
+                                            <rng:zeroOrMore>
+                                                <rng:ref name="postscript"/>
+                                            </rng:zeroOrMore>
+                                            <rng:zeroOrMore>
+                                                <rng:ref name="note"/>
+                                            </rng:zeroOrMore>
+                                        </rng:interleave>
+                                    </rng:optional>
+                                </rng:optional>
+                            </rng:group>
+                        </content>
+                        <attList>
+                            <attDef ident="type" mode="replace" usage="req">
+                                <datatype>
+                                    <rng:value>writingSession</rng:value>
+                                </datatype>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                </schemaSpec>
+            </div>
+        </body>
+    </text>
+</TEI>

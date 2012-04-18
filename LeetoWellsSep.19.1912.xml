@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../Desktop/correspondence%20schema%20andTEIwork/correspondenceProposal.rng.xml" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:math="http://www.w3.org/1998/Math/MathML"
+  xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Correspondence of Vernon Lee to H.G. Wells</title>
+        <author>Lee, Vernon</author>
+        <editor>Gagel, Mandy</editor>
+      </titleStmt>
+      <editionStmt>
+        <edition>First edition, digital</edition>
+        <respStmt>
+          <resp>Transribed by</resp>
+          <name>Mandy Gagel</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoded by</resp>
+          <name>Mandy Gagel</name>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Loyola University</publisher>
+        <pubPlace>Chicago, Il</pubPlace>
+        <date>2012</date>
+      </publicationStmt>
+      <seriesStmt>
+        <p>Digital born transcritptions of letters from Vernon Lee to H.G. Wells</p>
+      </seriesStmt>
+      <notesStmt>
+        <note type="summary">Concerns their differences in opinion about "fatalism" and the civic status of men and women. He has also sent Lee proofs of his latest book.</note>
+      </notesStmt>
+      <sourceDesc>
+        <correspDesc>
+          <sender>
+            <persName>Vernon Lee</persName>
+          </sender>
+          <addressee>
+            <persName>H.G. Wells</persName>
+          </addressee>
+          <placeSender>
+            <placeName>Paris. Womens American Club, 4 Rue de Chevreuse, Meulan S. et O.</placeName>
+          </placeSender>
+          <placeAddressee>
+            <placeName>Wells home, England</placeName>
+          </placeAddressee>
+          <dateSender>
+            <date when="1912-09-19">September 19, [1912]</date>
+          </dateSender>
+        </correspDesc>
+        <msDesc>
+          <msIdentifier>
+            <repository>Wells Archive at UI, Urban Champaign</repository>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Pilot project for a digital edition of the selected letters of Vernon Lee</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Various explanations here about editing choices we made.</p>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <textClass>
+        <keywords scheme="Lee Letters">
+          <list>
+            <item>letter
+              <date when="1912-09-19"/>
+            </item>
+          </list>
+        </keywords>
+      </textClass>
+      <langUsage>
+        <language ident="eng">English</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change>Yet to certify certain unreadable words</change>
+    </revisionDesc>
+  </teiHeader>
+  <text type="letter">
+    <body>
+      <div type="address">
+        <address rend="right">
+          <addrLine>Paris. Womens American Club</addrLine>
+          <addrLine>4 Rue de Chevreuse</addrLine>
+          <addrLine>Meulan S. et O. Sept. 19.</addrLine>
+        </address>
+      </div>
+      <div type="writingSession">
+        <dateline rend="left">Meulan S. et O. Sept. 19</dateline></div>
+      <div type="writingSession">
+        <salute>Dear Mr <rs type="person">Wells</rs></salute>
+        <p>Herewith your proofs, with a thousand thanks for letting me read them. They have interested me very much, but I continue to feel that yours is not a fair statement of the case, inasmuch as you put under the heading of your <hi rend="underline">constructors</hi> what is quite equally the ideal of the people you contemptuously dismiss as <hi rend="underline">fatalists</hi>. Even <rs type="person">H. Spencer</rs> would have subscribed to all your wishes for the future; they are the inevitable form which wishes for the future <hi rend="underline">must</hi> take given our present mentality, <hi rend="strikethrough">unless</hi> and given also that we do not belong to those who seek for ideals in the past and <hi rend="strikethrough">that do not</hi> therefore try to prolong its formulae and schemes of civilization. There are <hi rend="strikethrough">difference</hi> 2 differences <hi rend="strikethrough">between</hi> really existing on these subjects: there is the difference between <hi rend="underline">A.</hi> conservative (or more professly retrogressive) <hi rend="strikethrough">minds</hi> thinkers and B. progressive thinkers. And there is the difference, of a total different nature, between C. those who like yourself (and all thinkers originally of the “socialist” kind) think that the improvement you describe can best (or solely!) be <unclear>composed</unclear> by deliberate plan making - “inventing” as you <unclear>[?]</unclear> it, such + such arrangements, and those D. who like <rs type="person">Spencer</rs> believe that these improvements will come as the result of minor and accumulated adjustments, being, if they are to be solid and organic the expression of the averaging of many and various passions and interests.</p>
+        <p>But it is absurd to call this class <hi rend="underline">D</hi> <hi rend="underline">fatalists</hi>. They believe quite as much as you do in choice + foresight, only this choice and intelligence and foresight is applied by them to proximate questions and to selfseeking interests, whereas your class C. wishes to apply choice and foresight to distant and (in D.’s <hi rend="underline">opinion</hi>) still uncertain hypothetical and perhaps imaginary questions, and to interests which are no longer <hi rend="underline">those of</hi> the direct ones of individuals + groups and (say <hi rend="strikethrough">C</hi> D) <hi rend="strikethrough">therefore</hi> <hi rend="above">insofar</hi> likely to be genuine + genuinely understood, but to the interests of future generations whose precise nature, necessities, possibilities + wishes it is (say D) impossible to deal with adequately. - Any other classification seems to me confusing and fruitful only of foolish scorn of other people.</p>
+        <p>Let me give you an instance. You speak of <hi rend="underline">inventing</hi> some <hi rend="strikethrough">political</hi> civic status which will answer to the real differences between men + women. Class D (myself for instance) answer that the <hi rend="strikethrough">real differences</hi> between men + women will only be <unclear>[?]</unclear> <unclear>[?]</unclear> indeed, will perhaps only be existent in its permanent essentials, when women shall have tried to alter their civic etc. etc. position to please themselves. In other words Class D. says that although you can make hypothetical <hi rend="strikethrough">and erroneous</hi> forecasts about the future, these forecasts will be valuable only as much as <unclear>fully</unclear> express and react on the present, but that the future itself can neither be foreseen nor prearranged, because we cannot<hi rend="strikethrough">neither</hi> know all the forces of the past + present, and still less grasp them and wield them as wholes.</p>
+        <p><hi rend="strikethrough">But</hi> C. and D. agree as to the directions in which they wish to go; but C. wants to be motor as well as rudder, while D. conceives that the motor is already given it human passions + interests, and that only a small amount of steering is possible to any individual or group of individuals.</p>
+        <p>Of course you will always belong to C., and belonging to C. is the essence of your usefulness in all the business, you are useful as a loosener of prejudices, a developer of sympathies + fancies. But you ought not to misrepresent and scorn the people (Class D) who want the same things as you but do not happen to agree with your method <unclear>[?]</unclear> getting <unclear>[?]</unclear> to <unclear>these</unclear> These! I haven’t left myself time to thank you + <rs type="person">Mrs Wells</rs> for your long suffering friendliness + the hospitality which has given me three such pleasant days. And there’s the lunch bell!</p>
+        <closer>I shall be back in <rs type="location">Florence</rs> by the 1st.
+          My love + thanks to <rs type="person">Mrs Wells</rs> + believe me 
+        Yrs sincerely,</closer>
+        <signed><rs type="person"><hi rend="right">V. Paget</hi></rs></signed>
+      </div>
+    </body>
+  </text>
+</TEI>

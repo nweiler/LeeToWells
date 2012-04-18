@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model 
+    href="correspondence%20schema/correspondenceProposal.rng" 
+    type="application/xml" 
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI 
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:math="http://www.w3.org/1998/Math/MathML" 
+    xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Correspondence of Vernon Lee to H.G. Wells</title>
+                <author>Lee, Vernon</author><editor>Gagel, Mandy</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>First edition, digital</edition>
+                <respStmt>
+                    <resp>Transribed by</resp>
+                    <name>Mandy Gagel</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Encoded by</resp>
+                    <name>Nick Weiler</name>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Loyola University</publisher>
+                <pubPlace>Chicago, Il</pubPlace>
+                <date>2012</date>
+            </publicationStmt>
+            <seriesStmt>
+                <p>Digital born transcritptions of letters from Vernon Lee to H.G. Wells</p>
+            </seriesStmt>
+            <notesStmt>
+                <note type="summary">The first known letter to Wells from Lee. 
+                    It regards library catalogs and Wells book, Anticipation.</note>
+            </notesStmt>
+            <sourceDesc>
+                <correspDesc>
+                    <sender>
+                        <persName>Vernon Lee</persName>
+                    </sender>
+                    <addressee>
+                        <persName>H.G. Wells</persName>
+                    </addressee>
+                    <placeSender>
+                        <placeName>IL Palmerino, Florence</placeName>
+                    </placeSender>
+                    <placeAddressee>
+                        <placeName>Wells home, London</placeName>
+                    </placeAddressee>
+                    <dateSender>
+                        <date when="1908-06-16">June 16, 1908</date>
+                    </dateSender>
+                </correspDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>Wells Archive at UI, Urbana Champaign</repository>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Pilot project for a digital edition of the selected letters of Vernon Lee</p>
+            </projectDesc>
+            <editorialDecl>
+                <p>Various explanations here about editing choices we made.</p>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="Lee Letters">
+                    <list>
+                        <item>letter?
+                            <date when="1908-06-16"/>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change>Yet to certify certain unreadable words</change>
+        </revisionDesc>
+    </teiHeader>
+    <text type="letter">
+        <body>
+            <div type="address">
+                <!-- Address is a letterhead, typeface -->
+                <address>
+                    <addrLine>Il Palmerino</addrLine>
+                    <addrLine>S. Gervasio</addrLine>
+                    <addrLine>Florence.</addrLine>
+                </address>
+            </div>
+            <div type="writingSession">
+                <dateline rend="left">June 16. [1908]</dateline>
+            </div>
+            <div type="writingSession">
+                <salute>Dear Mr Wells</salute>
+                <p>I shall be leaving this on the 1st and hope to be with you on the 
+                    15th July, remaining till convenient, till the 18th, a Saturday.</p>
+                <p>Do not arrange for a meeting between me and <rs type="person">William James</rs>. My position 
+                    towards him is far more complicated + difficult than that of intellectual 
+                    opposition (perhaps you have glanced at the <hi rend="strikethrough">Need</hi> <hi rend="underline">
+                    Will to Believe</hi> paper in 
+                    the book dedicated to you?). It is this. Many years ago Mr William
+                    James, whom I know slightly, attacked me very violently (privately) 
+                    for having put a person resembling his brother into one of the stories of a 
+                    volume (quite forgotten) called <hi rend="underline">Vanitas</hi>. The attack was exaggerated and unmannerly, 
+                    and it had the effect that for more than ten years Mr <hi rend="underline">Henry</hi> James, an old, kind + 
+                    dear friend of mine, refused (without having read that story) to meet me. Some 
+                    years ago we <hi rend="underline">did</hi> meet, and are, I trust, good friends again. But I have no wish 
+                    ever to meet Mr William James, whose fraternal fury not merely cost me a 
+                    friendship which I greatly prized, but (I being then comparatively young) broke 
+                    my nerve utterly as a writer of modern stories, filling me with the constant 
+                    fear of putting in real people - </p>
+                 <p>That is my care. By an odd coincidence, after admiring Wm James’s Psychological 
+                     work more than everything, and even (this was after that quarrel) writing in 
+                     favour of the <hi rend="underline">Lange=James</hi> theory, I had occasion to fall foul of him in his
+                     “Will-to-Believe” capacity; and now I have ready half a volume against <hi rend="underline">Pragmatism</hi> 
+                     as incarnated in him + <rs type="person">Schiller</rs> - Everyone who knows of 
+                     our quarrel will imagine that my hostility (I being a woman!) to the “Will to Believe” 
+                     is due to William James’ having been horrid about that old story of mine. 
+                     <hi rend="underline">It is not so.</hi> 
+                     But, what between my poor little story in the past, and my articles against 
+                     Pragmatism in the present + the future, I think a meeting between us would be a mistake.</p> 
+                <closer>I will write later to <rs type="person">Mrs Wells</rs> to settle more exactly. 
+                    Meanwhile my love to her + all thanks to both, Yrs truly
+                    <signed><hi rend="underline">V. Paget</hi></signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

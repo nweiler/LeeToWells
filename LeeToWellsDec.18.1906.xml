@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model 
+    href="correspondence%20schema/correspondenceProposal.rng" 
+    type="application/xml" 
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI 
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:math="http://www.w3.org/1998/Math/MathML" 
+    xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Correspondence of Vernon Lee to H.G. Wells</title>
+                <author>Lee, Vernon</author><editor>Gagel, Mandy</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>First edition, digital</edition>
+                <respStmt>
+                    <resp>Transribed by</resp>
+                    <name>Mandy Gagel</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Encoded by</resp>
+                    <name>Nick Weiler</name>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Loyola University</publisher>
+                <pubPlace>Chicago, Il</pubPlace>
+                <date>2012</date>
+            </publicationStmt>
+            <seriesStmt>
+                <p>Digital born transcritptions of letters from Vernon Lee to H.G. Wells</p>
+            </seriesStmt>
+            <notesStmt>
+                <note type="summary">The first known letter to Wells from Lee. 
+                    It regards library catalogs and Wells book, Anticipation.</note>
+            </notesStmt>
+            <sourceDesc>
+                <correspDesc>
+                    <sender>
+                        <persName>Vernon Lee</persName>
+                    </sender>
+                    <addressee>
+                        <persName>H.G. Wells</persName>
+                    </addressee>
+                    <placeSender>
+                        <placeName>IL Palmerino, Florence</placeName>
+                    </placeSender>
+                    <placeAddressee>
+                        <placeName>Wells home, London</placeName>
+                    </placeAddressee>
+                    <dateSender>
+                        <date when="1906-12-18">December 18, 1906</date>
+                    </dateSender>
+                </correspDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>Wells Archive at UI, Urbana Champaign</repository>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Pilot project for a digital edition of the selected letters of Vernon Lee</p>
+            </projectDesc>
+            <editorialDecl>
+                <p>Various explanations here about editing choices we made.</p>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="Lee Letters">
+                    <list>
+                        <item>letter?
+                            <date when="1906-12-18"/>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change>Yet to certify certain unreadable words</change>
+        </revisionDesc>
+    </teiHeader>
+    <text type="letter">
+        <body>
+            <div type="address">
+                <!-- Address is a letterhead, typeface -->
+                <address>
+                    <addrLine>Il Palmerino</addrLine>
+                    <addrLine>S. Gervasio</addrLine>
+                    <addrLine>Florence.</addrLine>
+                </address>
+            </div>
+            <div type="writingSession">
+                <dateline rend="left">Dec. 18 1906</dateline>
+            </div>
+            <div type="writingSession">
+                <salute>Dear Mr Wells - </salute>                
+                <p>I have been wanting to write so long, so long; and this letter, which shame
+                    at your writing first has makes me begin at an odd moment, will presumably be in and 
+                    out of its envelope many times before it gets finished. <hi rend="underline">Shame</hi>, 
+                    because it is I who 
+                    should have acknowledged your two books, not you my article. I found the <hi rend="underine">
+                    Comet</hi> on my return, and have recently only finished it; the American book - I have 
+                    not even begun! 
+                    My brother has been at the point of death; he seems, after nearly a month’s anxiety, out
+                    of momentary danger, but paralysed of one side + miserably weak, like an old, old man. I 
+                    am able to do nothing practical (he has a firstrate wife) but the constant running to + fro,
+                    + the unavowed anxiety seem to have cut into all my spare time - And somehow I never have 
+                    spare time, because I am a bad worker; + worst of all a very, very phenomenally slow reader. 
+                    And I cannot <hi rend="unerline">mix</hi> books any more than other folk can mix wines: I must finish what I am reading
+                    + then ponderously set to something else - 
+                    (damn: the dinnerbell, always a meal: NB <hi rend="underline">no meals or mealtimes after the Comet</hi>)</p> 
+                <p>I foresee I shall begin your American book the day after tomorrow; meanwhile, by way of thanks for 
+                    it, I am sending you the most delightful thing I can imagine, a letter <hi rend="underline">not in the 
+                    least intended for you</hi> - indeed I had a free fight to wrest this very shy old friend’s permission 
+                    to send it. She is - 
+                    well, judge whether she isn’t exactly the reader one would pray for. Besides this, she is a Cambridge 
+                    woman, knows economics <hi rend="underline">very well</hi>; + has seen America from the inside, i.e. all 
+                    manner of unlikely places. 
+                    I can imagine nothing so pleasing as such pleasure as this letter means.
+                    I also venture to send you + your dear wife a facsimile of a drawing by Sargent which, though done 
+                    sixteen or seventeen years ago, is still rather like me.</p>
+                <p>Well - I shall write to you about the American book, but now, a few words about the <hi rend="underline">Comet</hi>. 
+                    (No, not a word more today, for I have a friend with me who is already constitutionally unpunctual, 
+                    a “poetic” person +, <hi rend="underline">having been meant myself for a Samurai</hi>, I do not like 
+                    keeping my dinner waiting - so, more anon, dear friends) - </p>
+                <p><hi rend="underline">Next evening</hi> How much of what I want to say shall I have time to 
+                    put down (it is cold as it can be 
+                    only in the South, with the wind smiting like a hand full of <hi rend="strikethrough">ice</hi> snow 
+                    off the blue + white mountains, + the 
+                    stone pine groaning + the olive wood sputtering + smelling delicious) Well! About the <hi rend="underline">Comet
+                    </hi>. The 
+                    novel part of it seems to me very fine in quality. (And, is it rude to say so? far finer as a [?] 
+                    literary expression than any of your previous books) - the quality of Mr Lewisham, a sort of 
+                    contained, overallish passionateness which, just because <hi rend="underline">it is of the whole bodily life</hi>
+                    , heart <hi rend="underline">lungs + muscle</hi>, 
+                    is always human, never - well, animal. Do you understand? Of course, for you have done this feat 
+                    yourself. And all the tragedy of the poor odious foolish boy is direct + as the Germans say 
+                    “packs one” - Moreover, the criticism of the present state of things is just + scathing - I think 
+                    this sort of holding the mirror up to the tolerated unnecessary follies of our days (the splendid 
+                    passage on the Boer + German wars, + many others) is one of the most useful things a writer 
+                    can do.</p> 
+                <p>It is the mission of the prophet to use the future (of course no real future ever) to preach at the 
+                    present from; + what we want most is the habit of considering the present as a [line missing, see 
+                    original] its most successful details as mere momentary stop gaps: the past, with all its great gifts, 
+                    has left us a Pandora’s nuisance in the shape of <hi rend="underline">acquiescence</hi> + the 
+                    belief that what <hi rend="underline">has been must be</hi>, 
+                    whereas nine times out of ten t’is the other way on.</p>
+                <p>So, I like the first part of the <hi rend="underline">Comet</hi> extremely. Of course you yourself 
+                    must feel what everyone tells 
+                    <hi rend="underline">me</hi>, that the 2d part is a falling off. The actual meteorological business is really tremendously 
+                    fine (the comet + its vapours with the naval battle) - But then one comes to understand + to care. 
+                    This is probably inevitable. <hi rend="strikethrough">Once</hi> You <hi rend="underline">yourself cannot</hi> 
+                    know <hi rend="underline">what kind of change</hi> the <hi rend="underline">green vapours have wrought</hi>. 
+                    Have vicious possibilities vanished? fools become wise, etc? etc. Tis an inconceivable 
+                    thing; but quite worth filling in for the sake of the frame work it affords you. Here again, the 
+                    useful + (to me, but not many others) interesting work of suggesting change. The mischief is that 
+                    you cannot really tell us enough of that change. Your logical premise is false: i.e. people become 
+                    sensible + good while surrounded by the things of folly + selfishness. There are some things which 
+                    have provoked discussion in my + I suppose many other circles. Are you throwing dust in our eyes for 
+                    fear of the [?] <hi rend="underline">young person’s</hi> parents, or do y are you at a loss how the question of sexual love etc. 
+                    will evolve after the green vapours? <hi rend="strikethrough">Do you</hi></p>
+                <p>Like the woman in Dumas’ play “Vous pouvez me le dire puisque je suis une femme d’esprit” - <hi rend="strikethrough">i.e.</hi>
+                    that is, 
+                    if you have anything to say, + do not merely drop the “cloud” - over the future of love as Ruskin did 
+                    over the past of glaciers. I can imagine two readings of the suggestion your postscript contains.
+                    1o When people shall have become morally better; a great many arrangements, including <hi rend="underline">ménage à quatre</hi>
+                    , 
+                    free love etc. etc., which would entail monstrous disorder nowadays if avowedly tolerated, would become 
+                    purely personal questions, offspring + inheritance etc being settled for, and wholesomeness of 
+                    individuals looking after the business.
+                    2do When people shall have come to live mere natural lives, certain possibilities, certain deviations 
+                    + scissions of feeling which our imperfection excludes as <hi rend="underline">morbid, [unwholesome]</hi> 
+                    etc. will become 
+                    possible; and among these [?] of the emotional possibilities, platonic love as a reality; even as 
+                    un-sexual love between near blood relations has become possible in consequence of the suppression 
+                    of incest - 
+                    <hi rend="underline">Now</hi>, which, or any of these? You are English, + perhaps my 
+                    Latin decency or indecency astonishes + 
+                    abashes you. Anyhow, I feel that you, like me, believe that there may be surprises in store for the 
+                    future: the surprise of much becoming permissible; only the “green vapours” will not come unless these 
+                    future permissible things are meanwhile forbidden - (But <hi rend="strikethrough">not</hi> I don’t choose to be forbidden these plain 
+                    questions) - </p>
+                
+                <p>23d</p> 
+                 <p>Dear Mr Wells - This letter is already too long by half, + it is not half finished, so I send it off. 
+                    And add that since two days I have been reading your <hi rend="underline">entrancing America</hi>. 
+                    You have never done anything 
+                    so good. I am only at the 3d chapter, + if I have time to write, + you to read, I will write again 
+                    when I have finished it. I feel as if it had been <hi rend="underline">written expressly for me</hi>
+                    , + this is probably the 
+                    feeling of each of your intelligent + willing readers. All my friend writer is absolutely what I think.
+                    Give my love - give this letter - to your dear wife. I am always so grateful for your quick, light 
+                    cordiality towards a rather disputative stranger. When you have time let me know about the Fabians, 
+                    whether I can join.</p>
+                <closer>Yours sincerely <signed><hi rend="underline">V. Paget</hi></signed>
+                </closer>                
+            </div>
+        </body>
+    </text>
+</TEI>
